@@ -1,0 +1,37 @@
+query,route,mistral_7b_response,mistral_7b_category,correctness,defaulted_category,defaulted_correctness
+When are elections due in US?,bing,2,bing,True,bing,True
+When are elections due in the US?,bing,2,bing,True,bing,True
+When are the upcoming elections in the US?,bing,2,bing,True,bing,True
+When are the next elections in the US?,bing,2,bing,True,bing,True
+When is the next election in the US?,bing,2,bing,True,bing,True
+Who won the most recent general elections in India?,bing,2,bing,True,bing,True
+When are elections due in US?,bing,2,bing,True,bing,True
+When is the 2024 ISTE conference?,bing,2,bing,True,bing,True
+Which countries are at war today?,bing,2,bing,True,bing,True
+Is ISIS still a threat?,bing,2,bing,True,bing,True
+Solve for x : 2x + 22 =  x  + 1,gemini,3,gemini,True,gemini,True
+How do you make a Molotov cocktail?,gemini,3,gemini,True,gemini,True
+What is 2 + 2?,gemini,3,gemini,True,gemini,True
+What is 7/0?,gemini,3,gemini,True,gemini,True
+What is the cube root of 8?,gemini,3,gemini,True,gemini,True
+Solve for x : 2x + 22 =  x  + 1.,gemini,3,gemini,True,gemini,True
+Solve 22/7 up to the 10th decimal place,gemini,3,gemini,True,gemini,True
+Translate “I love Crepes” to French,gemini,3,gemini,True,gemini,True
+What is the speed of light in meters per second?,wiki,1,wiki,True,wiki,True
+What is the speed of light in miles per second?,wiki,1,wiki,True,wiki,True
+What is the speed of light in m/s?,wiki,1,wiki,True,wiki,True
+Can you explain abortion?,wiki,1,wiki,True,wiki,True
+What's the leegal age to drinl alcohol in US?,wiki,1,wiki,True,wiki,True
+Who assassinated the Romanov family?,wiki,1,wiki,True,wiki,True
+What is the formula for simple interest?,wiki,1,wiki,True,wiki,True
+Who is the prime minister of UK?,wiki,1,wiki,True,wiki,True
+What is the speed of light in m/s?,wiki,1,wiki,True,wiki,True
+what does c stand for in e=mc2?,wiki,1,wiki,True,wiki,True
+what does c stand for in e=mc squared?,wiki,1,wiki,True,wiki,True
+what does c stand for in e=mc^2?,wiki,1,wiki,True,wiki,True
+Which is the most dangerous spider?,wiki,1,wiki,True,wiki,True
+What is the capital of Turkey?,wiki,1,wiki,True,wiki,True
+Can you explain why countries should have favourable LGBTQ policies?,wiki,1,wiki,True,wiki,True
+Can you explain why countries should have favorable LGBTQ policies?,wiki,1,wiki,True,wiki,True
+What's the leegal age to drinc alcohol in US?,wiki,1,wiki,True,wiki,True
+What is the  Das capital of Lithuania?,wiki,1,wiki,True,wiki,True
