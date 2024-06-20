@@ -38,7 +38,7 @@ class MistralModel:
     
     def get_response_tgi(self, prompt, command):
 
-        PROMPT_OUTRO = "\n\n[INST] %s [/INST] CATEGORY NUMBER: " % command
+        PROMPT_OUTRO = "\n\n[INST] QUERY: %s [/INST] CATEGORY NUMBER: " % command
 
         url= "http://localhost:8080/generate"
 

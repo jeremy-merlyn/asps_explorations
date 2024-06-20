@@ -26,7 +26,7 @@ For example: "What is 26 miles in kilometers?", "Show me pictures of dogs", "Wha
 # fscore_after_default: [0.8678 0.8741 0.9266]
 # support_after_default: [147 291 569]
 
-# time per query: 0.2753
+# time per query: 0.2703
 
 query,route,mistral_7b_response,mistral_7b_category,correctness,defaulted_category,defaulted_correctness
 When is National gorilla suit day,bing,3,gemini,False,gemini,False

@@ -36,9 +36,6 @@ full_categories_dict = {
 
 
 
-# filter out any exx that are missing a label, or use a label that is not in the categories_dict
-df = df[df['route'].isin(full_categories_dict.values())]
-
 
 
 def construct_categories_dict(agents):
@@ -57,10 +54,18 @@ def construct_prompt(agents):
     return prompt
 
 
+# try:
+#     os.makedirs('data/combinations')
+#     os.makedirs('data/confusion_matrices')
+#     os.makedirs('data/include_oos_examples')
+#     os.makedirs('data/include_oos_examples/combinations')
+#     os.makedirs('data/include_oos_examples/confusion_matrices')
+# except FileExistsError:
+#     pass
 
 
 
-def run_case(df, case_number):
+def run_case(df, case_number, include_out_of_selection_examples=False):
 
     SELECTED_AGENTS = AGENT_COMBO_CASES[case_number]
 
@@ -74,7 +79,18 @@ def run_case(df, case_number):
     print(CONSTRUCTED_PROMPT)
 
     OUTPUT_CSV = 'data/combinations/case_%s.csv' % case_number
+    if include_out_of_selection_examples:
+        OUTPUT_CSV = 'data/include_oos_examples/combinations/case_%s.csv' % case_number
 
+    
+    if include_out_of_selection_examples:
+        CATEGORIES_DICT = full_categories_dict
+    else:
+        CATEGORIES_DICT = selected_categories_dict
+
+    # filter out any exx that are missing a label, or use a label that is not in the categories_dict
+    df = df[df['route'].isin(CATEGORIES_DICT.values())]
+    
     start = time.time()
 
     for i, row in df.iterrows():
@@ -136,6 +152,8 @@ def run_case(df, case_number):
     df = df.sort_values(by=['correctness', 'route', model.name+'_category'])
 
     OUTPUT_CSV_WITH_STATS = 'data/combinations/stats_case_%s.csv' % case_number
+    if include_out_of_selection_examples:
+        OUTPUT_CSV_WITH_STATS = 'data/include_oos_examples/combinations/stats_case_%s.csv' % case_number
 
     df.to_csv(OUTPUT_CSV_WITH_STATS,index=False)
 
@@ -165,31 +183,37 @@ def run_case(df, case_number):
     print("output with stats printed to %s" % OUTPUT_CSV_WITH_STATS)
 
 
+    if include_out_of_selection_examples:
 
-    print("output with stats printed to %s" % OUTPUT_CSV_WITH_STATS)
+     
+        # confusion matrix before defaults    
+        confusionmatrix = metrics.confusion_matrix(actual, predicted, labels=list(CATEGORIES_DICT.values()))
+        disp = metrics.ConfusionMatrixDisplay(confusionmatrix, display_labels=list(CATEGORIES_DICT.values()))
+        disp.plot()
+        plt.savefig('data/include_oos_examples/confusion_matrices/case_%s.png' % case_number)
 
-
-
-    try:
-        os.makedirs('data/confusion_matrices')
-    except FileExistsError:
-        pass
-
-    # confusion matrix before defaults    
-    confusionmatrix = metrics.confusion_matrix(actual, predicted, labels=list(full_categories_dict.values()))
-    disp = metrics.ConfusionMatrixDisplay(confusionmatrix, display_labels=list(full_categories_dict.values()))
-    disp.plot()
-    plt.savefig('data/confusion_matrices/case_%s.png' % case_number)
-
-    # confusion matrix after defaults
-    confusionmatrix_after_default = metrics.confusion_matrix(actual, predicted_after_default, labels=list(full_categories_dict.values()))
-    disp_after_default = metrics.ConfusionMatrixDisplay(confusionmatrix_after_default, display_labels=list(full_categories_dict.values()))
-    disp_after_default.plot()
-    plt.savefig('data/confusion_matrices/case_%s_after_default.png' % case_number)
+        # confusion matrix after defaults
+        confusionmatrix_after_default = metrics.confusion_matrix(actual, predicted_after_default, labels=list(CATEGORIES_DICT.values()))
+        disp_after_default = metrics.ConfusionMatrixDisplay(confusionmatrix_after_default, display_labels=list(CATEGORIES_DICT.values()))
+        disp_after_default.plot()
+        plt.savefig('data/include_oos_examples/confusion_matrices/case_%s_after_default.png' % case_number)
 
 
-run_case(df, 1)
-run_case(df, 2)
+    else:
+        # confusion matrix before defaults    
+        confusionmatrix = metrics.confusion_matrix(actual, predicted, labels=list(CATEGORIES_DICT.values()))
+        disp = metrics.ConfusionMatrixDisplay(confusionmatrix, display_labels=list(CATEGORIES_DICT.values()))
+        disp.plot()
+        plt.savefig('data/confusion_matrices/case_%s.png' % case_number)
 
-# for n in range(1,13):
-#     run_case(df, n)
+        # confusion matrix after defaults
+        confusionmatrix_after_default = metrics.confusion_matrix(actual, predicted_after_default, labels=list(CATEGORIES_DICT.values()))
+        disp_after_default = metrics.ConfusionMatrixDisplay(confusionmatrix_after_default, display_labels=list(CATEGORIES_DICT.values()))
+        disp_after_default.plot()
+        plt.savefig('data/confusion_matrices/case_%s_after_default.png' % case_number)
+
+
+# run_case(df, 1)
+
+for n in range(1,3):
+    run_case(df, n, include_out_of_selection_examples=True)

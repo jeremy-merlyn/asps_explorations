@@ -1,4 +1,4 @@
-# Combination of agents: ['wiki', 'bing', 'gemini']
+# Combination of agents: ['wiki', 'bing']
 
 # Prompt: <s>You are a classroom assistant. Your job is to determine which of the following categories best fits a user's query. Please only provide the category number in your response. The available categories are as follows:
 
@@ -9,31 +9,26 @@ For example: "What is the capital of France?", "Tell us about World War II", "Wh
 For example:  "When is Memorial Day in 2024?", "What is the latest news?", "What happened in politics last week?", "How much does a Tesla Model 3 currently cost?", "Who is Madonna currently dating?", "When does the next Dune movie come out?, "What is Kendrick Lamar's latest album?"
 Only use this category for queries about events in the past 3 years, not historical figures or events.
 
-3. The user is engaging in general conversation, including but not limited to: personal chat; matters of taste or opinion; solving math problems or converting units; map directions and distances between cities; requests for creative assistance or writing; requests for images, videos or resources; requests for lesson plans, classroom advice, activities, and quizzes; requests for translation, jokes, or predictions.
-For example: "What is 26 miles in kilometers?", "Show me pictures of dogs", "What is the square root of 9?", "How do you say 'welcome' in Spanish?", "Solve for x: x + 7x = 16", "Who is the best football player?", "How long does it take to fly from Los Angeles to Seattle?", "Write me a letter of recommendation", "Who will win the next world cup?", "Is 3/5 greater than 1/2?", "How many liters are in 5 gallons?", "Give me a lesson plan for 4th grade civics", "How are you?", "What should I do for my birthday?", "Write me a haiku"
+3. Use this category only if the user query does not fit in any of the categories above.
 
-4. Use this category only if the user query does not fit in any of the categories above.
-
-# accuracy: 0.9017
-# precision: [0.8649 0.8737 0.     0.9324]
-# recall: [0.8707 0.8797 0.     0.9209]
-# fscore: [0.8678 0.8767 0.     0.9266]
+# accuracy: 0.6713
+# precision: [0.8025 0.     0.     0.769 ]
+# recall: [0.8844 0.     0.     0.9596]
+# fscore: [0.8414 0.     0.     0.8538]
 # support: [147 291   0 569]
 
-# accuracy_after_default: 0.9027
-# precision_after_default: [0.8649 0.8653 0.9324]
-# recall_after_default: [0.8707 0.8832 0.9209]
-# fscore_after_default: [0.8678 0.8741 0.9266]
+# accuracy_after_default: 0.7925
+# precision_after_default: [0.8025 0.9037 0.769 ]
+# recall_after_default: [0.8844 0.4192 0.9596]
+# fscore_after_default: [0.8414 0.5728 0.8538]
 # support_after_default: [147 291 569]
 
-# time per query: 0.2753
+# time per query: 0.2664
 
 query,route,mistral_7b_response,mistral_7b_category,correctness,defaulted_category,defaulted_correctness
-When is National gorilla suit day,bing,3,gemini,False,gemini,False
-who has the best record in the NBA,bing,3,gemini,False,gemini,False
-who is Taylor Swift boyfriend,bing,3,gemini,False,gemini,False
-who is the strongest person in the world,bing,3,gemini,False,gemini,False
-who won between the 49ers and the lion,bing,3,gemini,False,gemini,False
+When is National gorilla suit day,bing,3,none,False,gemini,False
+who is the strongest person in the world,bing,3,none,False,gemini,False
+is Queen Elizabeth alive,bing,3,none,False,gemini,False
 how many casualties from covid-19,bing,1,wiki,False,wiki,False
 how many gold medals does the u.s. have in the Olympics,bing,1,wiki,False,wiki,False
 how many iPhones are in the world,bing,1,wiki,False,wiki,False
@@ -42,13 +37,15 @@ how old is the oldest person,bing,1,wiki,False,wiki,False
 how old is the Queen of England,bing,1,wiki,False,wiki,False
 what is the world record for the biggest car,bing,1,wiki,False,wiki,False
 what zoo has baby polar bears,bing,1,wiki,False,wiki,False
+who has the best record in the NBA,bing,1,wiki,False,wiki,False
 who has the most Olympic gold medals,bing,1,wiki,False,wiki,False
 who is the shortest boy in the world,bing,1,wiki,False,wiki,False
 what year is it,bing,1,wiki,False,wiki,False
 what year are we in,bing,1,wiki,False,wiki,False
-is Queen Elizabeth alive,bing,1,wiki,False,wiki,False
 how many people are in the world,bing,1,wiki,False,wiki,False
 discuss the benefits and drawbacks of Donald Trump when he was president of the United States,gemini,2,bing,False,bing,False
+how much would it cost to fly to Tampa Florida from Durango Colorado,gemini,2,bing,False,bing,False
+what is the current best graphics card,gemini,2,bing,False,bing,False
 what were the advantages and disadvantages of Donald Trump when he was US president,gemini,2,bing,False,bing,False
 who is going to win the Superbowl this year,gemini,2,bing,False,bing,False
 how many days till the 25th of June,gemini,2,bing,False,bing,False
@@ -56,78 +53,310 @@ how many days till 27th,gemini,2,bing,False,bing,False
 how many days till 27th of February,gemini,2,bing,False,bing,False
 how many days is it until the 1st of April,gemini,2,bing,False,bing,False
 what is going on,gemini,2,bing,False,bing,False
+who will win the Superbowl,gemini,2,bing,False,bing,False
+who is going to win the Superbowl,gemini,2,bing,False,bing,False
+who will win the Superbowl Chiefs or 49ers,gemini,2,bing,False,bing,False
+are the Eagles better than the 49ers,gemini,2,bing,False,bing,False
+who is the best soccer player in the world,gemini,2,bing,False,bing,False
+which soccer player is better Ronaldo or Messi,gemini,2,bing,False,bing,False
+who is the better hockey team the Minnesota Wild or the Pittsburgh Penguins,gemini,2,bing,False,bing,False
 who is the best current soccer player,gemini,2,bing,False,bing,False
 who is the best current hockey player,gemini,2,bing,False,bing,False
-what is the inflection point of AI,gemini,4,none,False,gemini,True
+Solve for x : 2x + 22 =  x  + 1,gemini,3,none,False,gemini,True
+How do you make a Molotov cocktail?,gemini,3,none,False,gemini,True
+What is 2 + 2?,gemini,0,none,False,gemini,True
+What is 7/0?,gemini,3,none,False,gemini,True
+Solve for x : 2x + 22 =  x  + 1.,gemini,3,none,False,gemini,True
+are computer beings real,gemini,3,none,False,gemini,True
+discuss whether or not the inflection point of AI has been reached,gemini,3,none,False,gemini,True
+do you agree that 2 plus 3 does not equal 2 times 3,gemini,3,none,False,gemini,True
+give me one idea to stop students from vaping in a high school bathroom,gemini,3,none,False,gemini,True
+how can I make more money,gemini,3,none,False,gemini,True
+how do I code,gemini,3,none,False,gemini,True
+how do I make a glass bowl,gemini,3,none,False,gemini,True
+how do I program website,gemini,3,none,False,gemini,True
+how do school districts get hacked,gemini,3,none,False,gemini,True
+how do you make a division symbol on pages,gemini,3,none,False,gemini,True
+how do you make a page in the pages app into grid paper,gemini,3,none,False,gemini,True
+how to build a build a catapult,gemini,3,none,False,gemini,True
+how to convert primitive data types in Java programming,gemini,3,none,False,gemini,True
+how to subtract fractions with dials,gemini,3,none,False,gemini,True
+how to troubleshoot a computer network,gemini,3,none,False,gemini,True
+how to write an inequality from a word problem.,gemini,3,none,False,gemini,True
+is AI going to take over the world,gemini,3,none,False,gemini,True
+is Gandhi the goat,gemini,3,none,False,gemini,True
+is the NFL scripted,gemini,3,none,False,gemini,True
+tell us some sculptures made out of gum,gemini,3,none,False,gemini,True
+what is one divided by 0,gemini,3,none,False,gemini,True
+what is the best way to stack bowls in a container,gemini,3,none,False,gemini,True
+what is the difference between a 4090 and a 39in,gemini,3,none,False,gemini,True
+what is the first step in x plus 2 equals 3,gemini,3,none,False,gemini,True
+what is the largest elephant in New York,gemini,3,none,False,gemini,True
+what is the spec difference between a 4090 and a 39ft,gemini,3,none,False,gemini,True
+who is bad,gemini,3,none,False,gemini,True
+why could someone be screaming in a bathroom,gemini,3,none,False,gemini,True
+why should you not use AI to write your papers,gemini,3,none,False,gemini,True
+who should my students write about today,gemini,3,none,False,gemini,True
+what will make my students settle down,gemini,3,none,False,gemini,True
+what will make my student stop talking,gemini,3,none,False,gemini,True
+how do I get my students to stop talking when they are supposed to be working,gemini,3,none,False,gemini,True
+how to make children behave,gemini,3,none,False,gemini,True
+am I allowed to hit my students,gemini,3,none,False,gemini,True
+can you give me a basic 5 paragraph essay outline,gemini,3,none,False,gemini,True
+can you give me the top tips for proof reading other people's papers,gemini,3,none,False,gemini,True
+can you give us a sample problem with order of operations without the answer,gemini,3,none,False,gemini,True
+can you make a high school senior schedule,gemini,3,none,False,gemini,True
+what should I eat for lunch,gemini,3,none,False,gemini,True
+write a Haiku poem,gemini,3,none,False,gemini,True
+ask me a would you rather question,gemini,3,none,False,gemini,True
+hey can you make me a 5 question quiz,gemini,3,none,False,gemini,True
+how much wood could a woodchuck chuck if a woodchuck could chuck wood,gemini,3,none,False,gemini,True
+where we at right now,gemini,3,none,False,gemini,True
+what is the answer to life,gemini,3,none,False,gemini,True
+who are the 10 most influential people in the world,gemini,3,none,False,gemini,True
+can you name famous children that are babies,gemini,3,none,False,gemini,True
+list 20 argumentative essay topics,gemini,3,none,False,gemini,True
+what is ‚àö -1,gemini,3,none,False,gemini,True
+what is 35 times 12,gemini,0,none,False,gemini,True
+what is 110 divided by 0,gemini,3,none,False,gemini,True
+what is 7 times 5,gemini,0,none,False,gemini,True
+what is 12 times 12,gemini,0,none,False,gemini,True
+what is 6 divided by 0,gemini,3,none,False,gemini,True
+what is 67 times 34,gemini,0,none,False,gemini,True
+what is 7 times 3,gemini,0,none,False,gemini,True
+what is 1000000 plus 1000,gemini,0,none,False,gemini,True
+what is 30 times 2,gemini,0,none,False,gemini,True
+what is 106 minus 986,gemini,3,none,False,gemini,True
+what is 1006 minus 986,gemini,0,none,False,gemini,True
+what is 2 plus 2,gemini,0,none,False,gemini,True
+what is 5 times 2418,gemini,0,none,False,gemini,True
+what is 142 times 528,gemini,0,none,False,gemini,True
+what is 67 x 34,gemini,0,none,False,gemini,True
+what is 800 times 2844,gemini,0,none,False,gemini,True
+what is 17 times 44,gemini,0,none,False,gemini,True
+what is 285 x 15,gemini,0,none,False,gemini,True
+what is 2850 x 150,gemini,0,none,False,gemini,True
+what is 2850 times 150,gemini,0,none,False,gemini,True
+what percentage would that be 18 divided by 25,gemini,3,none,False,gemini,True
+what is 52 times 38,gemini,0,none,False,gemini,True
+what is 258 x 45,gemini,0,none,False,gemini,True
+solve x plus 2 equals 34 x,gemini,3,none,False,gemini,True
+156 divided by 8492,gemini,3,none,False,gemini,True
+divide 0 by Infinity,gemini,3,none,False,gemini,True
+divide 0 by 0,gemini,3,none,False,gemini,True
+what is ‚àö 172,gemini,3,none,False,gemini,True
+what is ‚àö 2078,gemini,3,none,False,gemini,True
+what is 4850 x 150,gemini,0,none,False,gemini,True
+what is the best thing to eat for dinner,gemini,3,none,False,gemini,True
+what should we do tonight,gemini,3,none,False,gemini,True
+how would you start a design project,gemini,3,none,False,gemini,True
+what is a good book that I should read,gemini,3,none,False,gemini,True
+how can we ensure that a i is used for good and not for harn,gemini,3,none,False,gemini,True
+how can we ensure that artificial intelligence is used for good,gemini,3,none,False,gemini,True
+what is your opinion of daylight savings time,gemini,3,none,False,gemini,True
+are the 49ers of best team,gemini,3,none,False,gemini,True
+who is the best football team,gemini,3,none,False,gemini,True
+who is the best NFL team,gemini,3,none,False,gemini,True
+who is better Messi or Ronaldo,gemini,3,none,False,gemini,True
+who is the greatest basketball player of all time,gemini,3,none,False,gemini,True
+who is better NC State or UNC,gemini,3,none,False,gemini,True
+who is better UNC or Duke,gemini,3,none,False,gemini,True
+who is the best NBA player,gemini,3,none,False,gemini,True
+who is the best rapper of all time,gemini,3,none,False,gemini,True
+who is the best rapper ever,gemini,3,none,False,gemini,True
+who is the best singer of all time,gemini,3,none,False,gemini,True
+who is the best soccer player of all time,gemini,3,none,False,gemini,True
+who is the best NFL football team,gemini,3,none,False,gemini,True
+who is better duke or UNC,gemini,3,none,False,gemini,True
+who is better UNC or North Carolina State,gemini,3,none,False,gemini,True
+who is better North Carolina state or Wake Forest University,gemini,3,none,False,gemini,True
+show us some fun chemistry videos,gemini,3,none,False,gemini,True
+show me images of cats,gemini,3,none,False,gemini,True
+tell me a joke about bears,gemini,3,none,False,gemini,True
+give me 10 creative writing prompts,gemini,3,none,False,gemini,True
+"should I eat dinner out tonight, or cook at home?",gemini,3,none,False,gemini,True
+what's your favorite food?,gemini,3,none,False,gemini,True
+will you be my friend?,gemini,3,none,False,gemini,True
+do you believe in God?,gemini,3,none,False,gemini,True
+can you help me with my homework?,gemini,3,none,False,gemini,True
+what's your favorite tv show?,gemini,3,none,False,gemini,True
+write a paragraph in the style of shakespeare,gemini,3,none,False,gemini,True
+can you give me some ideas for birthday gifts for my mom?,gemini,3,none,False,gemini,True
+are you a republican or a democrat?,gemini,3,none,False,gemini,True
+what's your favorite color?,gemini,3,none,False,gemini,True
+What is the cube root of 8?,gemini,1,wiki,False,wiki,False
+Solve 22/7 up to the 10th decimal place,gemini,1,wiki,False,wiki,False
+Translate “I love Crepes” to French,gemini,1,wiki,False,wiki,False
+How do you say 'I love you' in Spanish?,gemini,1,wiki,False,wiki,False
+Give me a lesson plan on photosynthesis,gemini,1,wiki,False,wiki,False
+Can you give me a lesson plan on the water cycle?,gemini,1,wiki,False,wiki,False
+can you explain what a hook is when writing an introductory paragraph,gemini,1,wiki,False,wiki,False
+computer essay topics,gemini,1,wiki,False,wiki,False
+convert 20 km to miles,gemini,1,wiki,False,wiki,False
+explain solving problems with variables,gemini,1,wiki,False,wiki,False
 give me some examples of central idea,gemini,1,wiki,False,wiki,False
-how do school districts get hacked,gemini,1,wiki,False,wiki,False
+how can I solve an equation,gemini,1,wiki,False,wiki,False
+how can I tell if a number is divisible by 9,gemini,1,wiki,False,wiki,False
+how do I create a Google Docs,gemini,1,wiki,False,wiki,False
+how do I find Orion,gemini,1,wiki,False,wiki,False
+how do I make a pound cake,gemini,1,wiki,False,wiki,False
+how do I solve one step equations,gemini,1,wiki,False,wiki,False
+how do I study for end-of-grade test,gemini,1,wiki,False,wiki,False
 how do we use the electromagnetic spectrum to produce Vape detecting machines,gemini,1,wiki,False,wiki,False
+how do you apply the grid method,gemini,1,wiki,False,wiki,False
 how do you cite an online article without any page numbers,gemini,1,wiki,False,wiki,False
+how do you cite evidence,gemini,1,wiki,False,wiki,False
+how do you create analogous colors,gemini,1,wiki,False,wiki,False
+how do you simplify 6 plus x times 1/3,gemini,1,wiki,False,wiki,False
+how far is it from Bradford on Avon to Glastonbury,gemini,1,wiki,False,wiki,False
+how is math used in baseball,gemini,1,wiki,False,wiki,False
+how long is a mile in meters,gemini,1,wiki,False,wiki,False
+how many cups are in a pint,gemini,1,wiki,False,wiki,False
+how many inches are there in one ft,gemini,1,wiki,False,wiki,False
+how many inches in 10 ft,gemini,1,wiki,False,wiki,False
+how many inches in 11 ft,gemini,1,wiki,False,wiki,False
+how many inches in one yd,gemini,1,wiki,False,wiki,False
+how many kilometers is 21 MI,gemini,1,wiki,False,wiki,False
+how many liters are in a gallon,gemini,1,wiki,False,wiki,False
+how many millimeters are there in one cm,gemini,1,wiki,False,wiki,False
 how many millimeters in 22 cm,gemini,1,wiki,False,wiki,False
+how many millimeters in to centimeters,gemini,1,wiki,False,wiki,False
+how many mph is 37.6 km,gemini,1,wiki,False,wiki,False
+how many ounces in one pound,gemini,1,wiki,False,wiki,False
 how many seconds are in a week,gemini,1,wiki,False,wiki,False
+how would I write an essay about American politics,gemini,1,wiki,False,wiki,False
 I need primary sources on war crimes committed during the Holocaust,gemini,1,wiki,False,wiki,False
 I need primary sources to support a research essay on war crimes committed during the Holocaust,gemini,1,wiki,False,wiki,False
 I need sources on the planet Saturn,gemini,1,wiki,False,wiki,False
+in kilometers what is 238855 MI,gemini,1,wiki,False,wiki,False
 is the vocabulary word approached an adverb,gemini,1,wiki,False,wiki,False
 is the word approached an adverb,gemini,1,wiki,False,wiki,False
+is there a way to delete all of my promotions in Gmail at once,gemini,1,wiki,False,wiki,False
 is there an answer for the 3x plus one conjecture,gemini,1,wiki,False,wiki,False
 what are 2 equivalent fractions,gemini,1,wiki,False,wiki,False
+what are some resources for mental health awareness for adolescence,gemini,1,wiki,False,wiki,False
+what are the steps for solving a 2 step equation,gemini,1,wiki,False,wiki,False
+what can we do in Burlington.,gemini,1,wiki,False,wiki,False
+what is 101 cm in Ft,gemini,1,wiki,False,wiki,False
+what is 20 km in standard measurement,gemini,1,wiki,False,wiki,False
+what is 3/4 of 12 in,gemini,1,wiki,False,wiki,False
+what is 3/4 of a foot,gemini,1,wiki,False,wiki,False
+what is the best rated bed and breakfast in Vancouver Washington,gemini,1,wiki,False,wiki,False
+what is the best way to learn about computers,gemini,1,wiki,False,wiki,False
 what is the difference from the Intel Iris taxi and the RTX 4090,gemini,1,wiki,False,wiki,False
+what is the distance between Washington to Beijing,gemini,1,wiki,False,wiki,False
 what is the divisibility rule for 9,gemini,1,wiki,False,wiki,False
+what is the inflection point of AI,gemini,1,wiki,False,wiki,False
+what is the structure of an argumentative essay,gemini,1,wiki,False,wiki,False
+what kind of stretches should I do before I run,gemini,1,wiki,False,wiki,False
+what makes a good hook for an essay,gemini,1,wiki,False,wiki,False
+when will I use quadratics in real life,gemini,1,wiki,False,wiki,False
+where is the microphone on a Mac Pro laptop,gemini,1,wiki,False,wiki,False
 where would you be able to use exponential decay in the world,gemini,1,wiki,False,wiki,False
 where would you be able to use exponential growth and exponential decay in the world,gemini,1,wiki,False,wiki,False
+where would you be able to use the slope equation in the world,gemini,1,wiki,False,wiki,False
+why do I need to know how to solve a system of equation in math,gemini,1,wiki,False,wiki,False
+how can we use the electromagnetic spectrum to create better safety in class,gemini,1,wiki,False,wiki,False
+I have an engineering class with 17 year old students I am teaching them about 3D printing could you come up with some lessons resources on how I can produce this for my students,gemini,1,wiki,False,wiki,False
 create 10 test questions on enlightenment philosophers,gemini,1,wiki,False,wiki,False
 what questions can I ask my students about Jupiter's largest moon,gemini,1,wiki,False,wiki,False
+what are some strategies for teaching multilingual in my classroom,gemini,1,wiki,False,wiki,False
+lessons for multiplying whole numbers by decimals,gemini,1,wiki,False,wiki,False
+activities for multiplying fractions by whole numbers,gemini,1,wiki,False,wiki,False
+teacher lesson plans for multiplying fractions by whole numbers,gemini,1,wiki,False,wiki,False
+write me a lesson plan for skip counting by 5,gemini,1,wiki,False,wiki,False
+we are working on the Pythagorean theorem do you have any suggestions,gemini,1,wiki,False,wiki,False
+come up with some questions. Year 13 students,gemini,1,wiki,False,wiki,False
+I need a sample order of operations problem and do not give the answer with it,gemini,1,wiki,False,wiki,False
+give me a multiplication problem that is 2 digits by 2 digits,gemini,1,wiki,False,wiki,False
+I need an example of a model student essay about Hatchet by Gary Paulsen about the theme of love,gemini,1,wiki,False,wiki,False
 give me a 5 paragraph explanation on why Pluto is not a planet,gemini,1,wiki,False,wiki,False
+can you provide me with some multiple-choice questions on 3D printing,gemini,1,wiki,False,wiki,False
+can you give us a sample problem to solve with order of operations,gemini,1,wiki,False,wiki,False
+tell me a sentence in Spanish,gemini,1,wiki,False,wiki,False
+write me a letter of recommendation for a teacher,gemini,1,wiki,False,wiki,False
+can you show us a 2 digit numbers to solve problems for 1st graders,gemini,1,wiki,False,wiki,False
+why did the chicken cross the road,gemini,1,wiki,False,wiki,False
 list 5 common tax incentives,gemini,1,wiki,False,wiki,False
 list all the capitals in United States,gemini,1,wiki,False,wiki,False
+what is 5000 divided by 286,gemini,1,wiki,False,wiki,False
+what is 6240 divided by 52,gemini,1,wiki,False,wiki,False
+what is 50 x 60,gemini,1,wiki,False,wiki,False
+what is 7 times 1300,gemini,1,wiki,False,wiki,False
+what is 7 times 2569000,gemini,1,wiki,False,wiki,False
+what is one plus one,gemini,1,wiki,False,wiki,False
+what is 204 x 4,gemini,1,wiki,False,wiki,False
+what is 87 divided by 4,gemini,1,wiki,False,wiki,False
+what is 800 x 254,gemini,1,wiki,False,wiki,False
+what is 1000 divided by 256,gemini,1,wiki,False,wiki,False
+is 4/6 equivalent to 6/9,gemini,1,wiki,False,wiki,False
+is 4/6 equivalent to 8/12,gemini,1,wiki,False,wiki,False
+calculate one plus one,gemini,1,wiki,False,wiki,False
+solve the equation x minus 32 is equal to 45,gemini,1,wiki,False,wiki,False
+8 x 55,gemini,1,wiki,False,wiki,False
+divide 7680 by 927,gemini,1,wiki,False,wiki,False
+what is 85% of 19,gemini,1,wiki,False,wiki,False
+what is the best way to make salsa,gemini,1,wiki,False,wiki,False
+how can artificial intelligence be used for good,gemini,1,wiki,False,wiki,False
 what is the ideal number of students in a classroom,gemini,1,wiki,False,wiki,False
+who is the worst NFL football team,gemini,1,wiki,False,wiki,False
+who is the worst NFL team,gemini,1,wiki,False,wiki,False
+who is the best NBA team,gemini,1,wiki,False,wiki,False
+who is the best team in the NHL,gemini,1,wiki,False,wiki,False
+what is the best soccer team in the world,gemini,1,wiki,False,wiki,False
+who is the best team in MLB,gemini,1,wiki,False,wiki,False
+who is the best ACC basketball team,gemini,1,wiki,False,wiki,False
+who is the best NHL team,gemini,1,wiki,False,wiki,False
+what was the best movie created the 1970s,gemini,1,wiki,False,wiki,False
+what are some classroom activities for 8th grade science?,gemini,1,wiki,False,wiki,False
+give me some activities to do with my 5th graders on photosynthesis,gemini,1,wiki,False,wiki,False
+what would be some good group activities on the american revolution?,gemini,1,wiki,False,wiki,False
+my 7th graders are learning about the electoral college. can you suggest some learning activities?,gemini,1,wiki,False,wiki,False
+classroom activities for learning about different forms of government,gemini,1,wiki,False,wiki,False
+what are some small group activities we can do about Romeo and Juliet?,gemini,1,wiki,False,wiki,False
+our class is studying the water cyle. what are some fun activities we could do about that?,gemini,1,wiki,False,wiki,False
+give me an idea for a classroom activity about propaganda,gemini,1,wiki,False,wiki,False
+I need some classroom activity suggestions about geometry for 4th graders,gemini,1,wiki,False,wiki,False
+what small group activites could we do if we're learning about the food web?,gemini,1,wiki,False,wiki,False
+show me photos of bengal tigers,gemini,1,wiki,False,wiki,False
+can you show me videos about the amazon rainforest?,gemini,1,wiki,False,wiki,False
+find pictures of lyndon johnson please,gemini,1,wiki,False,wiki,False
 please search for videos about watergate,gemini,1,wiki,False,wiki,False
+show me pictures of dinosaurs,gemini,1,wiki,False,wiki,False
+search for videos of albert einstein speaking german,gemini,1,wiki,False,wiki,False
+can you show a picture of the eiffel tower please,gemini,1,wiki,False,wiki,False
+find educational videos about fractions,gemini,1,wiki,False,wiki,False
+tell me a story about a princess and a dragon,gemini,1,wiki,False,wiki,False
+write a poem about the dolphins,gemini,1,wiki,False,wiki,False
+how long is it from houston to chicago by car?,gemini,1,wiki,False,wiki,False
+"translate this sentence into French: ""I love you""",gemini,1,wiki,False,wiki,False
+can you give me some ideas for classroom projects?,gemini,1,wiki,False,wiki,False
+give me 10 multiple choice questions on U.S. civics,gemini,1,wiki,False,wiki,False
+create a short quiz on the periodic table,gemini,1,wiki,False,wiki,False
+give me 5 practice questions on the digestive system,gemini,1,wiki,False,wiki,False
 did Al Gore win presidency,wiki,2,bing,False,bing,False
 how old is Marilyn Monroe,wiki,2,bing,False,bing,False
+is there a song called cyclone,wiki,2,bing,False,bing,False
+what can I take for a cough,wiki,2,bing,False,bing,False
 what happened on September 11th 2001,wiki,2,bing,False,bing,False
+what is Debbie Does Dallas,wiki,2,bing,False,bing,False
 what year did Katherine Johnson die,wiki,2,bing,False,bing,False
 when did Kobe Bryant helicopter crash,wiki,2,bing,False,bing,False
 when do we celebrate Cinco de Mayo,wiki,2,bing,False,bing,False
-where can I find camels today,wiki,2,bing,False,bing,False
+who is mrbeast,wiki,2,bing,False,bing,False
 who won the Superbowl in 2018,wiki,2,bing,False,bing,False
 who won the Superbowl in 2020,wiki,2,bing,False,bing,False
 who was the last president of the United States,wiki,2,bing,False,bing,False
-can you tell me about the sausage catastrophe,wiki,3,gemini,False,gemini,False
-does it hurt to give birth to a baby,wiki,3,gemini,False,gemini,False
-explain a hook related to writing,wiki,3,gemini,False,gemini,False
-explain ecosystems from the perspective of a horse,wiki,3,gemini,False,gemini,False
-give an example of push,wiki,3,gemini,False,gemini,False
-how do I tell wind speed by using isobar,wiki,3,gemini,False,gemini,False
-how do we play soccer,wiki,3,gemini,False,gemini,False
-how do we tell the wind speed,wiki,3,gemini,False,gemini,False
-how do you get a virus,wiki,3,gemini,False,gemini,False
-how fast does the ocean waves at the beach like go,wiki,3,gemini,False,gemini,False
-how long will it take you to climb Mount Everest,wiki,3,gemini,False,gemini,False
-how many Superbowls have the New England Patriots cheat in,wiki,3,gemini,False,gemini,False
-how to find the volume of a sphere,wiki,3,gemini,False,gemini,False
-how to solve quadratic equations,wiki,3,gemini,False,gemini,False
-is the earth flat,wiki,3,gemini,False,gemini,False
-is there a song called cyclone,wiki,3,gemini,False,gemini,False
-is water wet,wiki,3,gemini,False,gemini,False
-share what a millipede looks like,wiki,3,gemini,False,gemini,False
-tell me about the best practices for setting up a business,wiki,3,gemini,False,gemini,False
-what are examples of a quadratic function on a graph,wiki,3,gemini,False,gemini,False
-what are kids,wiki,3,gemini,False,gemini,False
-what can I take for a cough,wiki,3,gemini,False,gemini,False
-what is a joule broken-up,wiki,3,gemini,False,gemini,False
-what is Debbie Does Dallas,wiki,3,gemini,False,gemini,False
-what is pi r squared,wiki,3,gemini,False,gemini,False
-what is the equation from converting Fahrenheit to Celsius,wiki,3,gemini,False,gemini,False
-what is the polynomial,wiki,3,gemini,False,gemini,False
-what is the quadratic equation,wiki,3,gemini,False,gemini,False
-what is the vertex of a quadratic,wiki,3,gemini,False,gemini,False
-who is mrbeast,wiki,3,gemini,False,gemini,False
-why do negative numbers get smaller as they get bigger,wiki,3,gemini,False,gemini,False
-why do we yawn,wiki,3,gemini,False,gemini,False
-was Al Gore the president of the United States,wiki,4,none,False,gemini,False
-what is the pwhl,wiki,4,none,False,gemini,False
-who won Super Bowl 3,wiki,4,none,False,gemini,False
+can you tell me about the sausage catastrophe,wiki,3,none,False,gemini,False
+how do I tell wind speed by using isobar,wiki,3,none,False,gemini,False
+how do you get a virus,wiki,3,none,False,gemini,False
+how many Superbowls have the New England Patriots cheat in,wiki,3,none,False,gemini,False
+is the earth flat,wiki,3,none,False,gemini,False
+is water wet,wiki,3,none,False,gemini,False
+was Al Gore the president of the United States,wiki,3,none,False,gemini,False
+what is a joule broken-up,wiki,3,none,False,gemini,False
+what is the pwhl,wiki,3,none,False,gemini,False
+who is the CEO of cnx,wiki,3,none,False,gemini,False
 When are elections due in US?,bing,2,bing,True,bing,True
 When are elections due in the US?,bing,2,bing,True,bing,True
 When are the upcoming elections in the US?,bing,2,bing,True,bing,True
@@ -148,9 +377,11 @@ what is the name of Taylor Swift's new album,bing,2,bing,True,bing,True
 when is Fat Tuesday 2024,bing,2,bing,True,bing,True
 when is Mardi Gras Fat Tuesday 2024,bing,2,bing,True,bing,True
 when is the Superbowl in 2024,bing,2,bing,True,bing,True
+who is Taylor Swift boyfriend,bing,2,bing,True,bing,True
 who performed at the Superbowl 2024,bing,2,bing,True,bing,True
 who won the Superbowl in 2024,bing,2,bing,True,bing,True
 what was the score for the 49ers game on Sunday,bing,2,bing,True,bing,True
+who won between the 49ers and the lion,bing,2,bing,True,bing,True
 who is Taylor Swift dating,bing,2,bing,True,bing,True
 what is going on in politics right now,bing,2,bing,True,bing,True
 how many days till Christmas,bing,2,bing,True,bing,True
@@ -256,262 +487,6 @@ Who is the current prime minister of Cambodia?,bing,2,bing,True,bing,True
 Who is the current prime minister of Thailand?,bing,2,bing,True,bing,True
 Who is the current president of Latvia?,bing,2,bing,True,bing,True
 Who is the current president of Guatemala?,bing,2,bing,True,bing,True
-Solve for x : 2x + 22 =  x  + 1,gemini,3,gemini,True,gemini,True
-How do you make a Molotov cocktail?,gemini,3,gemini,True,gemini,True
-What is 2 + 2?,gemini,3,gemini,True,gemini,True
-What is 7/0?,gemini,3,gemini,True,gemini,True
-What is the cube root of 8?,gemini,3,gemini,True,gemini,True
-Solve for x : 2x + 22 =  x  + 1.,gemini,3,gemini,True,gemini,True
-Solve 22/7 up to the 10th decimal place,gemini,3,gemini,True,gemini,True
-Translate “I love Crepes” to French,gemini,3,gemini,True,gemini,True
-How do you say 'I love you' in Spanish?,gemini,3,gemini,True,gemini,True
-Give me a lesson plan on photosynthesis,gemini,3,gemini,True,gemini,True
-Can you give me a lesson plan on the water cycle?,gemini,3,gemini,True,gemini,True
-are computer beings real,gemini,3,gemini,True,gemini,True
-can you explain what a hook is when writing an introductory paragraph,gemini,3,gemini,True,gemini,True
-computer essay topics,gemini,3,gemini,True,gemini,True
-convert 20 km to miles,gemini,3,gemini,True,gemini,True
-discuss whether or not the inflection point of AI has been reached,gemini,3,gemini,True,gemini,True
-do you agree that 2 plus 3 does not equal 2 times 3,gemini,3,gemini,True,gemini,True
-explain solving problems with variables,gemini,3,gemini,True,gemini,True
-give me one idea to stop students from vaping in a high school bathroom,gemini,3,gemini,True,gemini,True
-how can I make more money,gemini,3,gemini,True,gemini,True
-how can I solve an equation,gemini,3,gemini,True,gemini,True
-how can I tell if a number is divisible by 9,gemini,3,gemini,True,gemini,True
-how do I code,gemini,3,gemini,True,gemini,True
-how do I create a Google Docs,gemini,3,gemini,True,gemini,True
-how do I find Orion,gemini,3,gemini,True,gemini,True
-how do I make a glass bowl,gemini,3,gemini,True,gemini,True
-how do I make a pound cake,gemini,3,gemini,True,gemini,True
-how do I program website,gemini,3,gemini,True,gemini,True
-how do I solve one step equations,gemini,3,gemini,True,gemini,True
-how do I study for end-of-grade test,gemini,3,gemini,True,gemini,True
-how do you apply the grid method,gemini,3,gemini,True,gemini,True
-how do you cite evidence,gemini,3,gemini,True,gemini,True
-how do you create analogous colors,gemini,3,gemini,True,gemini,True
-how do you make a division symbol on pages,gemini,3,gemini,True,gemini,True
-how do you make a page in the pages app into grid paper,gemini,3,gemini,True,gemini,True
-how do you simplify 6 plus x times 1/3,gemini,3,gemini,True,gemini,True
-how far is it from Bradford on Avon to Glastonbury,gemini,3,gemini,True,gemini,True
-how is math used in baseball,gemini,3,gemini,True,gemini,True
-how long is a mile in meters,gemini,3,gemini,True,gemini,True
-how many cups are in a pint,gemini,3,gemini,True,gemini,True
-how many inches are there in one ft,gemini,3,gemini,True,gemini,True
-how many inches in 10 ft,gemini,3,gemini,True,gemini,True
-how many inches in 11 ft,gemini,3,gemini,True,gemini,True
-how many inches in one yd,gemini,3,gemini,True,gemini,True
-how many kilometers is 21 MI,gemini,3,gemini,True,gemini,True
-how many liters are in a gallon,gemini,3,gemini,True,gemini,True
-how many millimeters are there in one cm,gemini,3,gemini,True,gemini,True
-how many millimeters in to centimeters,gemini,3,gemini,True,gemini,True
-how many mph is 37.6 km,gemini,3,gemini,True,gemini,True
-how many ounces in one pound,gemini,3,gemini,True,gemini,True
-how much would it cost to fly to Tampa Florida from Durango Colorado,gemini,3,gemini,True,gemini,True
-how to build a build a catapult,gemini,3,gemini,True,gemini,True
-how to convert primitive data types in Java programming,gemini,3,gemini,True,gemini,True
-how to subtract fractions with dials,gemini,3,gemini,True,gemini,True
-how to troubleshoot a computer network,gemini,3,gemini,True,gemini,True
-how to write an inequality from a word problem.,gemini,3,gemini,True,gemini,True
-how would I write an essay about American politics,gemini,3,gemini,True,gemini,True
-in kilometers what is 238855 MI,gemini,3,gemini,True,gemini,True
-is AI going to take over the world,gemini,3,gemini,True,gemini,True
-is Gandhi the goat,gemini,3,gemini,True,gemini,True
-is the NFL scripted,gemini,3,gemini,True,gemini,True
-is there a way to delete all of my promotions in Gmail at once,gemini,3,gemini,True,gemini,True
-tell us some sculptures made out of gum,gemini,3,gemini,True,gemini,True
-what are some resources for mental health awareness for adolescence,gemini,3,gemini,True,gemini,True
-what are the steps for solving a 2 step equation,gemini,3,gemini,True,gemini,True
-what can we do in Burlington.,gemini,3,gemini,True,gemini,True
-what is 101 cm in Ft,gemini,3,gemini,True,gemini,True
-what is 20 km in standard measurement,gemini,3,gemini,True,gemini,True
-what is 3/4 of 12 in,gemini,3,gemini,True,gemini,True
-what is 3/4 of a foot,gemini,3,gemini,True,gemini,True
-what is one divided by 0,gemini,3,gemini,True,gemini,True
-what is the best rated bed and breakfast in Vancouver Washington,gemini,3,gemini,True,gemini,True
-what is the best way to learn about computers,gemini,3,gemini,True,gemini,True
-what is the best way to stack bowls in a container,gemini,3,gemini,True,gemini,True
-what is the current best graphics card,gemini,3,gemini,True,gemini,True
-what is the difference between a 4090 and a 39in,gemini,3,gemini,True,gemini,True
-what is the distance between Washington to Beijing,gemini,3,gemini,True,gemini,True
-what is the first step in x plus 2 equals 3,gemini,3,gemini,True,gemini,True
-what is the largest elephant in New York,gemini,3,gemini,True,gemini,True
-what is the spec difference between a 4090 and a 39ft,gemini,3,gemini,True,gemini,True
-what is the structure of an argumentative essay,gemini,3,gemini,True,gemini,True
-what kind of stretches should I do before I run,gemini,3,gemini,True,gemini,True
-what makes a good hook for an essay,gemini,3,gemini,True,gemini,True
-when will I use quadratics in real life,gemini,3,gemini,True,gemini,True
-where is the microphone on a Mac Pro laptop,gemini,3,gemini,True,gemini,True
-where would you be able to use the slope equation in the world,gemini,3,gemini,True,gemini,True
-who is bad,gemini,3,gemini,True,gemini,True
-why could someone be screaming in a bathroom,gemini,3,gemini,True,gemini,True
-why do I need to know how to solve a system of equation in math,gemini,3,gemini,True,gemini,True
-why should you not use AI to write your papers,gemini,3,gemini,True,gemini,True
-who should my students write about today,gemini,3,gemini,True,gemini,True
-how can we use the electromagnetic spectrum to create better safety in class,gemini,3,gemini,True,gemini,True
-I have an engineering class with 17 year old students I am teaching them about 3D printing could you come up with some lessons resources on how I can produce this for my students,gemini,3,gemini,True,gemini,True
-what will make my students settle down,gemini,3,gemini,True,gemini,True
-what will make my student stop talking,gemini,3,gemini,True,gemini,True
-what are some strategies for teaching multilingual in my classroom,gemini,3,gemini,True,gemini,True
-how do I get my students to stop talking when they are supposed to be working,gemini,3,gemini,True,gemini,True
-how to make children behave,gemini,3,gemini,True,gemini,True
-am I allowed to hit my students,gemini,3,gemini,True,gemini,True
-lessons for multiplying whole numbers by decimals,gemini,3,gemini,True,gemini,True
-activities for multiplying fractions by whole numbers,gemini,3,gemini,True,gemini,True
-teacher lesson plans for multiplying fractions by whole numbers,gemini,3,gemini,True,gemini,True
-write me a lesson plan for skip counting by 5,gemini,3,gemini,True,gemini,True
-we are working on the Pythagorean theorem do you have any suggestions,gemini,3,gemini,True,gemini,True
-come up with some questions. Year 13 students,gemini,3,gemini,True,gemini,True
-I need a sample order of operations problem and do not give the answer with it,gemini,3,gemini,True,gemini,True
-give me a multiplication problem that is 2 digits by 2 digits,gemini,3,gemini,True,gemini,True
-I need an example of a model student essay about Hatchet by Gary Paulsen about the theme of love,gemini,3,gemini,True,gemini,True
-can you give me a basic 5 paragraph essay outline,gemini,3,gemini,True,gemini,True
-can you provide me with some multiple-choice questions on 3D printing,gemini,3,gemini,True,gemini,True
-can you give me the top tips for proof reading other people's papers,gemini,3,gemini,True,gemini,True
-can you give us a sample problem to solve with order of operations,gemini,3,gemini,True,gemini,True
-can you give us a sample problem with order of operations without the answer,gemini,3,gemini,True,gemini,True
-can you make a high school senior schedule,gemini,3,gemini,True,gemini,True
-what should I eat for lunch,gemini,3,gemini,True,gemini,True
-tell me a sentence in Spanish,gemini,3,gemini,True,gemini,True
-write me a letter of recommendation for a teacher,gemini,3,gemini,True,gemini,True
-write a Haiku poem,gemini,3,gemini,True,gemini,True
-ask me a would you rather question,gemini,3,gemini,True,gemini,True
-can you show us a 2 digit numbers to solve problems for 1st graders,gemini,3,gemini,True,gemini,True
-hey can you make me a 5 question quiz,gemini,3,gemini,True,gemini,True
-how much wood could a woodchuck chuck if a woodchuck could chuck wood,gemini,3,gemini,True,gemini,True
-why did the chicken cross the road,gemini,3,gemini,True,gemini,True
-where we at right now,gemini,3,gemini,True,gemini,True
-what is the answer to life,gemini,3,gemini,True,gemini,True
-who are the 10 most influential people in the world,gemini,3,gemini,True,gemini,True
-can you name famous children that are babies,gemini,3,gemini,True,gemini,True
-list 20 argumentative essay topics,gemini,3,gemini,True,gemini,True
-what is ‚àö -1,gemini,3,gemini,True,gemini,True
-what is 5000 divided by 286,gemini,3,gemini,True,gemini,True
-what is 35 times 12,gemini,3,gemini,True,gemini,True
-what is 110 divided by 0,gemini,3,gemini,True,gemini,True
-what is 7 times 5,gemini,3,gemini,True,gemini,True
-what is 12 times 12,gemini,3,gemini,True,gemini,True
-what is 6 divided by 0,gemini,3,gemini,True,gemini,True
-what is 6240 divided by 52,gemini,3,gemini,True,gemini,True
-what is 67 times 34,gemini,3,gemini,True,gemini,True
-what is 50 x 60,gemini,3,gemini,True,gemini,True
-what is 7 times 3,gemini,3,gemini,True,gemini,True
-what is 7 times 1300,gemini,3,gemini,True,gemini,True
-what is 7 times 2569000,gemini,3,gemini,True,gemini,True
-what is one plus one,gemini,3,gemini,True,gemini,True
-what is 1000000 plus 1000,gemini,3,gemini,True,gemini,True
-what is 30 times 2,gemini,3,gemini,True,gemini,True
-what is 204 x 4,gemini,3,gemini,True,gemini,True
-what is 106 minus 986,gemini,3,gemini,True,gemini,True
-what is 1006 minus 986,gemini,3,gemini,True,gemini,True
-what is 2 plus 2,gemini,3,gemini,True,gemini,True
-what is 5 times 2418,gemini,3,gemini,True,gemini,True
-what is 142 times 528,gemini,3,gemini,True,gemini,True
-what is 67 x 34,gemini,3,gemini,True,gemini,True
-what is 87 divided by 4,gemini,3,gemini,True,gemini,True
-what is 800 times 2844,gemini,3,gemini,True,gemini,True
-what is 800 x 254,gemini,3,gemini,True,gemini,True
-what is 1000 divided by 256,gemini,3,gemini,True,gemini,True
-what is 17 times 44,gemini,3,gemini,True,gemini,True
-what is 285 x 15,gemini,3,gemini,True,gemini,True
-what is 2850 x 150,gemini,3,gemini,True,gemini,True
-what is 2850 times 150,gemini,3,gemini,True,gemini,True
-what percentage would that be 18 divided by 25,gemini,3,gemini,True,gemini,True
-is 4/6 equivalent to 6/9,gemini,3,gemini,True,gemini,True
-is 4/6 equivalent to 8/12,gemini,3,gemini,True,gemini,True
-what is 52 times 38,gemini,3,gemini,True,gemini,True
-what is 258 x 45,gemini,3,gemini,True,gemini,True
-solve x plus 2 equals 34 x,gemini,3,gemini,True,gemini,True
-calculate one plus one,gemini,3,gemini,True,gemini,True
-solve the equation x minus 32 is equal to 45,gemini,3,gemini,True,gemini,True
-8 x 55,gemini,3,gemini,True,gemini,True
-divide 7680 by 927,gemini,3,gemini,True,gemini,True
-156 divided by 8492,gemini,3,gemini,True,gemini,True
-divide 0 by Infinity,gemini,3,gemini,True,gemini,True
-divide 0 by 0,gemini,3,gemini,True,gemini,True
-what is ‚àö 172,gemini,3,gemini,True,gemini,True
-what is ‚àö 2078,gemini,3,gemini,True,gemini,True
-what is 4850 x 150,gemini,3,gemini,True,gemini,True
-what is 85% of 19,gemini,3,gemini,True,gemini,True
-what is the best thing to eat for dinner,gemini,3,gemini,True,gemini,True
-what is the best way to make salsa,gemini,3,gemini,True,gemini,True
-what should we do tonight,gemini,3,gemini,True,gemini,True
-how would you start a design project,gemini,3,gemini,True,gemini,True
-what is a good book that I should read,gemini,3,gemini,True,gemini,True
-who will win the Superbowl,gemini,3,gemini,True,gemini,True
-how can we ensure that a i is used for good and not for harn,gemini,3,gemini,True,gemini,True
-how can we ensure that artificial intelligence is used for good,gemini,3,gemini,True,gemini,True
-how can artificial intelligence be used for good,gemini,3,gemini,True,gemini,True
-what is your opinion of daylight savings time,gemini,3,gemini,True,gemini,True
-are the 49ers of best team,gemini,3,gemini,True,gemini,True
-who is the best football team,gemini,3,gemini,True,gemini,True
-who is the best NFL team,gemini,3,gemini,True,gemini,True
-who is better Messi or Ronaldo,gemini,3,gemini,True,gemini,True
-who is going to win the Superbowl,gemini,3,gemini,True,gemini,True
-who will win the Superbowl Chiefs or 49ers,gemini,3,gemini,True,gemini,True
-who is the greatest basketball player of all time,gemini,3,gemini,True,gemini,True
-are the Eagles better than the 49ers,gemini,3,gemini,True,gemini,True
-who is the worst NFL football team,gemini,3,gemini,True,gemini,True
-who is the worst NFL team,gemini,3,gemini,True,gemini,True
-who is better NC State or UNC,gemini,3,gemini,True,gemini,True
-who is better UNC or Duke,gemini,3,gemini,True,gemini,True
-who is the best NBA team,gemini,3,gemini,True,gemini,True
-who is the best team in the NHL,gemini,3,gemini,True,gemini,True
-what is the best soccer team in the world,gemini,3,gemini,True,gemini,True
-who is the best soccer player in the world,gemini,3,gemini,True,gemini,True
-which soccer player is better Ronaldo or Messi,gemini,3,gemini,True,gemini,True
-who is the best NBA player,gemini,3,gemini,True,gemini,True
-who is the best rapper of all time,gemini,3,gemini,True,gemini,True
-who is the best rapper ever,gemini,3,gemini,True,gemini,True
-who is the best team in MLB,gemini,3,gemini,True,gemini,True
-who is the best singer of all time,gemini,3,gemini,True,gemini,True
-who is the better hockey team the Minnesota Wild or the Pittsburgh Penguins,gemini,3,gemini,True,gemini,True
-who is the best soccer player of all time,gemini,3,gemini,True,gemini,True
-who is the best NFL football team,gemini,3,gemini,True,gemini,True
-who is the best ACC basketball team,gemini,3,gemini,True,gemini,True
-who is better duke or UNC,gemini,3,gemini,True,gemini,True
-who is better UNC or North Carolina State,gemini,3,gemini,True,gemini,True
-who is better North Carolina state or Wake Forest University,gemini,3,gemini,True,gemini,True
-who is the best NHL team,gemini,3,gemini,True,gemini,True
-what was the best movie created the 1970s,gemini,3,gemini,True,gemini,True
-what are some classroom activities for 8th grade science?,gemini,3,gemini,True,gemini,True
-give me some activities to do with my 5th graders on photosynthesis,gemini,3,gemini,True,gemini,True
-what would be some good group activities on the american revolution?,gemini,3,gemini,True,gemini,True
-my 7th graders are learning about the electoral college. can you suggest some learning activities?,gemini,3,gemini,True,gemini,True
-classroom activities for learning about different forms of government,gemini,3,gemini,True,gemini,True
-what are some small group activities we can do about Romeo and Juliet?,gemini,3,gemini,True,gemini,True
-our class is studying the water cyle. what are some fun activities we could do about that?,gemini,3,gemini,True,gemini,True
-give me an idea for a classroom activity about propaganda,gemini,3,gemini,True,gemini,True
-I need some classroom activity suggestions about geometry for 4th graders,gemini,3,gemini,True,gemini,True
-what small group activites could we do if we're learning about the food web?,gemini,3,gemini,True,gemini,True
-show me photos of bengal tigers,gemini,3,gemini,True,gemini,True
-can you show me videos about the amazon rainforest?,gemini,3,gemini,True,gemini,True
-find pictures of lyndon johnson please,gemini,3,gemini,True,gemini,True
-show us some fun chemistry videos,gemini,3,gemini,True,gemini,True
-show me images of cats,gemini,3,gemini,True,gemini,True
-show me pictures of dinosaurs,gemini,3,gemini,True,gemini,True
-search for videos of albert einstein speaking german,gemini,3,gemini,True,gemini,True
-can you show a picture of the eiffel tower please,gemini,3,gemini,True,gemini,True
-find educational videos about fractions,gemini,3,gemini,True,gemini,True
-tell me a story about a princess and a dragon,gemini,3,gemini,True,gemini,True
-tell me a joke about bears,gemini,3,gemini,True,gemini,True
-write a poem about the dolphins,gemini,3,gemini,True,gemini,True
-give me 10 creative writing prompts,gemini,3,gemini,True,gemini,True
-how long is it from houston to chicago by car?,gemini,3,gemini,True,gemini,True
-"should I eat dinner out tonight, or cook at home?",gemini,3,gemini,True,gemini,True
-what's your favorite food?,gemini,3,gemini,True,gemini,True
-"translate this sentence into French: ""I love you""",gemini,3,gemini,True,gemini,True
-will you be my friend?,gemini,3,gemini,True,gemini,True
-do you believe in God?,gemini,3,gemini,True,gemini,True
-can you help me with my homework?,gemini,3,gemini,True,gemini,True
-what's your favorite tv show?,gemini,3,gemini,True,gemini,True
-write a paragraph in the style of shakespeare,gemini,3,gemini,True,gemini,True
-can you give me some ideas for birthday gifts for my mom?,gemini,3,gemini,True,gemini,True
-are you a republican or a democrat?,gemini,3,gemini,True,gemini,True
-what's your favorite color?,gemini,3,gemini,True,gemini,True
-can you give me some ideas for classroom projects?,gemini,3,gemini,True,gemini,True
-give me 10 multiple choice questions on U.S. civics,gemini,3,gemini,True,gemini,True
-create a short quiz on the periodic table,gemini,3,gemini,True,gemini,True
-give me 5 practice questions on the digestive system,gemini,3,gemini,True,gemini,True
 What is the speed of light in meters per second?,wiki,1,wiki,True,wiki,True
 What is the speed of light in miles per second?,wiki,1,wiki,True,wiki,True
 What is the speed of light in m/s?,wiki,1,wiki,True,wiki,True
@@ -557,10 +532,13 @@ did Franklin Pierce ever married,wiki,1,wiki,True,wiki,True
 do beluga whale have teeth,wiki,1,wiki,True,wiki,True
 do hurricanes form at the equator,wiki,1,wiki,True,wiki,True
 do we yawn because we need more oxygen,wiki,1,wiki,True,wiki,True
+does it hurt to give birth to a baby,wiki,1,wiki,True,wiki,True
 does lightning always touch ground,wiki,1,wiki,True,wiki,True
 does your bone marrow grow back,wiki,1,wiki,True,wiki,True
 examples of dystopian fiction,wiki,1,wiki,True,wiki,True
+explain a hook related to writing,wiki,1,wiki,True,wiki,True
 explain ecosystems from the perspective of a frog,wiki,1,wiki,True,wiki,True
+explain ecosystems from the perspective of a horse,wiki,1,wiki,True,wiki,True
 explain pi r squared,wiki,1,wiki,True,wiki,True
 explain primary colors to me as if I was a child,wiki,1,wiki,True,wiki,True
 explain primary colors to me as if I was a college student,wiki,1,wiki,True,wiki,True
@@ -572,6 +550,7 @@ explain the lifecycle of rain,wiki,1,wiki,True,wiki,True
 explain the water cycle,wiki,1,wiki,True,wiki,True
 first president of the United States,wiki,1,wiki,True,wiki,True
 give an example of force,wiki,1,wiki,True,wiki,True
+give an example of push,wiki,1,wiki,True,wiki,True
 give me a specific example of fear in The Crucible,wiki,1,wiki,True,wiki,True
 Give me a summary of the Articles of the Constitution,wiki,1,wiki,True,wiki,True
 give us a Black History Month fact,wiki,1,wiki,True,wiki,True
@@ -585,6 +564,8 @@ how did the world population respond to the Green Revolution,wiki,1,wiki,True,wi
 how did Trotsky die,wiki,1,wiki,True,wiki,True
 how do elephants communicate with their trunks,wiki,1,wiki,True,wiki,True
 how do frogs play a role in their environment,wiki,1,wiki,True,wiki,True
+how do we play soccer,wiki,1,wiki,True,wiki,True
+how do we tell the wind speed,wiki,1,wiki,True,wiki,True
 how does an LED work,wiki,1,wiki,True,wiki,True
 how does social class show up in Emma by Jane Austen,wiki,1,wiki,True,wiki,True
 how does the book The Elephant Man deal with The Human Condition,wiki,1,wiki,True,wiki,True
@@ -604,6 +585,7 @@ how far is the Moon away from the Earth,wiki,1,wiki,True,wiki,True
 how far is the moon from the earth in kilometers,wiki,1,wiki,True,wiki,True
 how far is the moon from the earth in km,wiki,1,wiki,True,wiki,True
 how far is the moon from the earth in miles,wiki,1,wiki,True,wiki,True
+how fast does the ocean waves at the beach like go,wiki,1,wiki,True,wiki,True
 how how old is the city of Tallinn,wiki,1,wiki,True,wiki,True
 how important is frogs to the ecosystem,wiki,1,wiki,True,wiki,True
 how is chlorophyll like a solar panel,wiki,1,wiki,True,wiki,True
@@ -614,6 +596,7 @@ how is the fear of Communism represented in The Crucible,wiki,1,wiki,True,wiki,T
 how is the top of the troposphere called when the sun is above us,wiki,1,wiki,True,wiki,True
 how is water made,wiki,1,wiki,True,wiki,True
 how long does working memory last,wiki,1,wiki,True,wiki,True
+how long will it take you to climb Mount Everest,wiki,1,wiki,True,wiki,True
 how many arms does a squid have,wiki,1,wiki,True,wiki,True
 how many arms does an octopus have,wiki,1,wiki,True,wiki,True
 how many babies are born each day in the United States,wiki,1,wiki,True,wiki,True
@@ -665,12 +648,15 @@ how old is the moon,wiki,1,wiki,True,wiki,True
 how tall is Mount Everest,wiki,1,wiki,True,wiki,True
 how tall is the Eiffel Tower,wiki,1,wiki,True,wiki,True
 how tall is the tallest man in the world,wiki,1,wiki,True,wiki,True
+how to find the volume of a sphere,wiki,1,wiki,True,wiki,True
+how to solve quadratic equations,wiki,1,wiki,True,wiki,True
 how were the Hawaii Islands formed,wiki,1,wiki,True,wiki,True
 I want to learn more about horses,wiki,1,wiki,True,wiki,True
 in what year did the Revolutionary War start,wiki,1,wiki,True,wiki,True
 is Pluto a planet,wiki,1,wiki,True,wiki,True
 is the moon's orbit circular,wiki,1,wiki,True,wiki,True
 let us talk about the major themes of Hamlet,wiki,1,wiki,True,wiki,True
+share what a millipede looks like,wiki,1,wiki,True,wiki,True
 Summarize the book Things Fall Apart,wiki,1,wiki,True,wiki,True
 teach me about elephants,wiki,1,wiki,True,wiki,True
 teach me about equivalent fractions,wiki,1,wiki,True,wiki,True
@@ -692,6 +678,7 @@ tell me about photosynthesis,wiki,1,wiki,True,wiki,True
 tell me about plant cells,wiki,1,wiki,True,wiki,True
 tell me about school buses,wiki,1,wiki,True,wiki,True
 tell me about the benefits of the drawbacks of the gambling industry,wiki,1,wiki,True,wiki,True
+tell me about the best practices for setting up a business,wiki,1,wiki,True,wiki,True
 tell me about the Bronze Age collapse,wiki,1,wiki,True,wiki,True
 tell me about the difference between prokaryotic and eukaryotic cells in a full sentence,wiki,1,wiki,True,wiki,True
 tell me about the first moon landing,wiki,1,wiki,True,wiki,True
@@ -714,7 +701,9 @@ what animals are on the endangered species list,wiki,1,wiki,True,wiki,True
 what AR level is the boy who harnessed the wind,wiki,1,wiki,True,wiki,True
 what are challenges to AI.,wiki,1,wiki,True,wiki,True
 what are different types of lava,wiki,1,wiki,True,wiki,True
+what are examples of a quadratic function on a graph,wiki,1,wiki,True,wiki,True
 what are examples of mental blindspots of society,wiki,1,wiki,True,wiki,True
+what are kids,wiki,1,wiki,True,wiki,True
 what are primary colors,wiki,1,wiki,True,wiki,True
 what are some fun facts about elephants,wiki,1,wiki,True,wiki,True
 what are some of the physical characteristics of the black-footed ferret,wiki,1,wiki,True,wiki,True
@@ -806,6 +795,7 @@ what is OPS in baseball,wiki,1,wiki,True,wiki,True
 what is Pennsylvania's state fruit,wiki,1,wiki,True,wiki,True
 what is perimeter,wiki,1,wiki,True,wiki,True
 what is pi,wiki,1,wiki,True,wiki,True
+what is pi r squared,wiki,1,wiki,True,wiki,True
 what is racism,wiki,1,wiki,True,wiki,True
 what is slavery,wiki,1,wiki,True,wiki,True
 what is the average amount of water per day that an almond tree needs,wiki,1,wiki,True,wiki,True
@@ -833,6 +823,7 @@ what is the difference between a prokaryotic and eukaryotic cell,wiki,1,wiki,Tru
 what is the difference between a squid and an octopus,wiki,1,wiki,True,wiki,True
 what is the difference between a vegetable and a fruit,wiki,1,wiki,True,wiki,True
 what is the distance to the Moon,wiki,1,wiki,True,wiki,True
+what is the equation from converting Fahrenheit to Celsius,wiki,1,wiki,True,wiki,True
 what is the exact number of pi,wiki,1,wiki,True,wiki,True
 what is the first day of spring,wiki,1,wiki,True,wiki,True
 what is the first plants fossil,wiki,1,wiki,True,wiki,True
@@ -863,10 +854,12 @@ what is the percentage of water in a body,wiki,1,wiki,True,wiki,True
 what is the percentage of yellow marrow to red marrow in the femur,wiki,1,wiki,True,wiki,True
 what is the peripheral nervous system,wiki,1,wiki,True,wiki,True
 what is the plot of Footloose,wiki,1,wiki,True,wiki,True
+what is the polynomial,wiki,1,wiki,True,wiki,True
 what is the population of Kern County California,wiki,1,wiki,True,wiki,True
 what is the primary cause of the Civil War,wiki,1,wiki,True,wiki,True
 what is the Pythagorean,wiki,1,wiki,True,wiki,True
 what is the Pythagorean theorem,wiki,1,wiki,True,wiki,True
+what is the quadratic equation,wiki,1,wiki,True,wiki,True
 what is the reproductive system,wiki,1,wiki,True,wiki,True
 what is the significance of the Rosetta Stone,wiki,1,wiki,True,wiki,True
 what is the specific heat of water,wiki,1,wiki,True,wiki,True
@@ -879,6 +872,7 @@ what is the Titanic,wiki,1,wiki,True,wiki,True
 what is the turtle,wiki,1,wiki,True,wiki,True
 what is the typical microscope for most science classes,wiki,1,wiki,True,wiki,True
 what is the Unicorn,wiki,1,wiki,True,wiki,True
+what is the vertex of a quadratic,wiki,1,wiki,True,wiki,True
 what is the water cycle,wiki,1,wiki,True,wiki,True
 what is the weight of water pressing down on you in the Challenger Deep,wiki,1,wiki,True,wiki,True
 what is translanguaging,wiki,1,wiki,True,wiki,True
@@ -939,6 +933,7 @@ when was the first Xbox made,wiki,1,wiki,True,wiki,True
 when was the first Xbox released,wiki,1,wiki,True,wiki,True
 when was the novel Anthem written,wiki,1,wiki,True,wiki,True
 where are camels from,wiki,1,wiki,True,wiki,True
+where can I find camels today,wiki,1,wiki,True,wiki,True
 where did an English bulldog originate,wiki,1,wiki,True,wiki,True
 where do puffer fish sleep,wiki,1,wiki,True,wiki,True
 where do pufferfish sleep,wiki,1,wiki,True,wiki,True
@@ -983,7 +978,6 @@ who is the 16th president of the United States,wiki,1,wiki,True,wiki,True
 who is the 32nd president of the United States,wiki,1,wiki,True,wiki,True
 who is the author of anthem,wiki,1,wiki,True,wiki,True
 who is the author of the novel anthem,wiki,1,wiki,True,wiki,True
-who is the CEO of cnx,wiki,1,wiki,True,wiki,True
 who is the football coach for Duquesne University,wiki,1,wiki,True,wiki,True
 who is the head Monarch of the UK,wiki,1,wiki,True,wiki,True
 who is the king,wiki,1,wiki,True,wiki,True
@@ -1011,6 +1005,7 @@ who was the first president,wiki,1,wiki,True,wiki,True
 who was Ulysses S Grant,wiki,1,wiki,True,wiki,True
 who was Winston Churchill,wiki,1,wiki,True,wiki,True
 who were the presidents who were impeached,wiki,1,wiki,True,wiki,True
+who won Super Bowl 3,wiki,1,wiki,True,wiki,True
 why are frogs green,wiki,1,wiki,True,wiki,True
 why are pineapples yellow,wiki,1,wiki,True,wiki,True
 why are the trees getting cut down in the Amazon rainforest,wiki,1,wiki,True,wiki,True
@@ -1019,10 +1014,12 @@ why did the United States Annex Hawaii,wiki,1,wiki,True,wiki,True
 why did World War one start,wiki,1,wiki,True,wiki,True
 why do high pressure systems cause drought,wiki,1,wiki,True,wiki,True
 why do I need to capitalize the letter i,wiki,1,wiki,True,wiki,True
+why do negative numbers get smaller as they get bigger,wiki,1,wiki,True,wiki,True
 why do people socially loaf,wiki,1,wiki,True,wiki,True
 why do possums play dead,wiki,1,wiki,True,wiki,True
 why do sharks have fins,wiki,1,wiki,True,wiki,True
 why do we have muscles,wiki,1,wiki,True,wiki,True
+why do we yawn,wiki,1,wiki,True,wiki,True
 why does water have a high specific heat,wiki,1,wiki,True,wiki,True
 why is Pluto not a planet,wiki,1,wiki,True,wiki,True
 why is Pluto not considered a planet,wiki,1,wiki,True,wiki,True

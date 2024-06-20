@@ -1,0 +1,744 @@
+# Combination of agents: ['bing', 'wiki']
+
+# Prompt: <s>You are a classroom assistant. Your job is to determine which of the following categories best fits a user's query. Please only provide the category number in your response. The available categories are as follows:
+
+1. The user is asking about current or recent events; contemporary pop culture; the year 2024 ('this year', 'currently', 'today') or 2023 ('last year')'; current seasons or current schedules; recent or upcoming elections; recent office-takers and award-winners; the age of living people; or any other information that is likely to have updated in the past 3 years. 
+For example:  "When is Memorial Day in 2024?", "What is the latest news?", "What happened in politics last week?", "How much does a Tesla Model 3 currently cost?", "Who is Madonna currently dating?", "When does the next Dune movie come out?, "What is Kendrick Lamar's latest album?"
+Only use this category for queries about events in the past 3 years, not historical figures or events.
+
+2. The user is asking for factual information that could be found in a textbook or encyclopedia, including general description or explanations of terms and concepts.
+For example: "What is the capital of France?", "Tell us about World War II", "What are protozoa?", "When did Darwin visit the Galapagos Islands?", "Please explain photosynthesis", "How tall is Mount Kilimanjaro?", "Why do we sneeze?", "What was the Roman empire?", "What mammal has the longest tail?", "Teach me about the Krebs cycle", "Who won the Spanish-American war?", "How far away is the sun?, "What is the pancreas?"
+
+3. Use this category only if the user query does not fit in any of the categories above.
+
+# accuracy: 0.8980
+# precision: [0.7446 0.     0.9844]
+# recall: [0.932  0.     0.8893]
+# fscore: [0.8278 0.     0.9344]
+# support: [147   0 569]
+
+# accuracy_after_default: 0.8980
+# precision_after_default: [0.7446 0.     0.9844]
+# recall_after_default: [0.932  0.     0.8893]
+# fscore_after_default: [0.8278 0.     0.9344]
+# support_after_default: [147   0 569]
+
+# time per query: 0.2542
+
+query,route,mistral_7b_response,mistral_7b_category,correctness,defaulted_category,defaulted_correctness
+how many iPhones are in the world,bing,3,none,False,gemini,False
+who is the strongest person in the world,bing,3,none,False,gemini,False
+how many gold medals does the u.s. have in the Olympics,bing,2,wiki,False,wiki,False
+how old is the oldest person,bing,2,wiki,False,wiki,False
+how old is the Queen of England,bing,2,wiki,False,wiki,False
+what is the world record for the biggest car,bing,2,wiki,False,wiki,False
+who has the best record in the NBA,bing,2,wiki,False,wiki,False
+who has the most Olympic gold medals,bing,2,wiki,False,wiki,False
+who is the shortest boy in the world,bing,2,wiki,False,wiki,False
+how many people are in the world,bing,2,wiki,False,wiki,False
+Who is the prime minister of UK?,wiki,1,bing,False,bing,False
+does it hurt to give birth to a baby,wiki,1,bing,False,bing,False
+give an example of push,wiki,1,bing,False,bing,False
+give us a Black History Month fact,wiki,1,bing,False,bing,False
+how do you get a virus,wiki,1,bing,False,bing,False
+how fast does the ocean waves at the beach like go,wiki,1,bing,False,bing,False
+how is the top of the troposphere called when the sun is above us,wiki,1,bing,False,bing,False
+how many Cherokee lost their lives in the Trail of Tears,wiki,1,bing,False,bing,False
+how many Cherokee natives died in the Trail of Tears,wiki,1,bing,False,bing,False
+how many polar bears are in captivity,wiki,1,bing,False,bing,False
+how many polar bears still exist,wiki,1,bing,False,bing,False
+how much sugar does candy have,wiki,1,bing,False,bing,False
+is there a song called cyclone,wiki,1,bing,False,bing,False
+uniforms for Real Madrid,wiki,1,bing,False,bing,False
+what day is Lincoln's birthday,wiki,1,bing,False,bing,False
+what day is Washington's birthday,wiki,1,bing,False,bing,False
+what happened on September 11th 2001,wiki,1,bing,False,bing,False
+what is a blue pit,wiki,1,bing,False,bing,False
+what is the cheese production in Wisconsin,wiki,1,bing,False,bing,False
+what is the date of Christmas,wiki,1,bing,False,bing,False
+what is the first day of spring,wiki,1,bing,False,bing,False
+what is the golf course where the Masters is played,wiki,1,bing,False,bing,False
+what is the last book in The Wimpy Kid series,wiki,1,bing,False,bing,False
+what is the weight of water pressing down on you in the Challenger Deep,wiki,1,bing,False,bing,False
+what year did Katherine Johnson die,wiki,1,bing,False,bing,False
+when did Kobe Bryant helicopter crash,wiki,1,bing,False,bing,False
+when do we celebrate Cinco de Mayo,wiki,1,bing,False,bing,False
+when is the first day of spring,wiki,1,bing,False,bing,False
+where can I find camels today,wiki,1,bing,False,bing,False
+where is Katherine Johnson facility located,wiki,1,bing,False,bing,False
+where is Queen Elizabeth,wiki,1,bing,False,bing,False
+which museum houses the presidential portraits including Michelle Obama's portrait,wiki,1,bing,False,bing,False
+who are some famous only children,wiki,1,bing,False,bing,False
+who are the Star original Superman,wiki,1,bing,False,bing,False
+who assassinated dr. Martin Luther King,wiki,1,bing,False,bing,False
+who is mrbeast,wiki,1,bing,False,bing,False
+who is next in line to the throne in England,wiki,1,bing,False,bing,False
+who is the football coach for Duquesne University,wiki,1,bing,False,bing,False
+who is the king of England,wiki,1,bing,False,bing,False
+who is the president of the United States,wiki,1,bing,False,bing,False
+who is the prime minister in the UK,wiki,1,bing,False,bing,False
+who won the Superbowl in 2018,wiki,1,bing,False,bing,False
+who won the Superbowl in 2020,wiki,1,bing,False,bing,False
+why are the trees getting cut down in the Amazon rainforest,wiki,1,bing,False,bing,False
+why are they cutting trees in the Amazon,wiki,1,bing,False,bing,False
+who is Alabama coach,wiki,1,bing,False,bing,False
+who is the superintendent of Rancho Santa Fe,wiki,1,bing,False,bing,False
+can you tell me about the sausage catastrophe,wiki,3,none,False,gemini,False
+explain ecosystems from the perspective of a horse,wiki,3,none,False,gemini,False
+how do we play soccer,wiki,3,none,False,gemini,False
+how is the fear of Communism represented in The Crucible,wiki,3,none,False,gemini,False
+how many Superbowls have the New England Patriots cheat in,wiki,3,none,False,gemini,False
+is the earth flat,wiki,3,none,False,gemini,False
+is water wet,wiki,3,none,False,gemini,False
+tell me about the best practices for setting up a business,wiki,3,none,False,gemini,False
+was Al Gore the president of the United States,wiki,3,none,False,gemini,False
+what are examples of mental blindspots of society,wiki,3,none,False,gemini,False
+what can I take for a cough,wiki,3,none,False,gemini,False
+what does CBE stand for in time,wiki,3,none,False,gemini,False
+what is a joule broken-up,wiki,3,none,False,gemini,False
+what is the pwhl,wiki,3,none,False,gemini,False
+who is the CEO of cnx,wiki,3,none,False,gemini,False
+why do I need to capitalize the letter i,wiki,3,none,False,gemini,False
+When are elections due in US?,bing,1,bing,True,bing,True
+When are elections due in the US?,bing,1,bing,True,bing,True
+When are the upcoming elections in the US?,bing,1,bing,True,bing,True
+When are the next elections in the US?,bing,1,bing,True,bing,True
+When is the next election in the US?,bing,1,bing,True,bing,True
+Who won the most recent general elections in India?,bing,1,bing,True,bing,True
+When is the 2024 ISTE conference?,bing,1,bing,True,bing,True
+Which countries are at war today?,bing,1,bing,True,bing,True
+Is ISIS still a threat?,bing,1,bing,True,bing,True
+give us the NBA schedule for February 15th 2024,bing,1,bing,True,bing,True
+how many casualties from covid-19,bing,1,bing,True,bing,True
+how many people died from covid,bing,1,bing,True,bing,True
+how much does Alexa cost a year,bing,1,bing,True,bing,True
+how old is the President of the United States,bing,1,bing,True,bing,True
+what is the date of Mardi Gras 2024,bing,1,bing,True,bing,True
+what is the first day of spring in 2024,bing,1,bing,True,bing,True
+what is the GTA 6 release date,bing,1,bing,True,bing,True
+what is the name of Taylor Swift's eleventh album,bing,1,bing,True,bing,True
+what is the name of Taylor Swift's new album,bing,1,bing,True,bing,True
+what zoo has baby polar bears,bing,1,bing,True,bing,True
+when is Fat Tuesday 2024,bing,1,bing,True,bing,True
+when is Mardi Gras Fat Tuesday 2024,bing,1,bing,True,bing,True
+When is National gorilla suit day,bing,1,bing,True,bing,True
+when is the Superbowl in 2024,bing,1,bing,True,bing,True
+who is Taylor Swift boyfriend,bing,1,bing,True,bing,True
+who performed at the Superbowl 2024,bing,1,bing,True,bing,True
+who won the Superbowl in 2024,bing,1,bing,True,bing,True
+what was the score for the 49ers game on Sunday,bing,1,bing,True,bing,True
+who won between the 49ers and the lion,bing,1,bing,True,bing,True
+who is Taylor Swift dating,bing,1,bing,True,bing,True
+what is going on in politics right now,bing,1,bing,True,bing,True
+how many days till Christmas,bing,1,bing,True,bing,True
+who is playing in the Super Bowl,bing,1,bing,True,bing,True
+when is the Superbowl this year,bing,1,bing,True,bing,True
+who is the current president,bing,1,bing,True,bing,True
+did Punxsutawney Phil see his shadow,bing,1,bing,True,bing,True
+how old is Kanye West,bing,1,bing,True,bing,True
+how old is Usher,bing,1,bing,True,bing,True
+how how old is Justin Bieber,bing,1,bing,True,bing,True
+what year is it,bing,1,bing,True,bing,True
+what is the current year,bing,1,bing,True,bing,True
+what year are we in,bing,1,bing,True,bing,True
+is Queen Elizabeth alive,bing,1,bing,True,bing,True
+who is the current Monarch in England,bing,1,bing,True,bing,True
+who is the current president of the United States,bing,1,bing,True,bing,True
+what season is it in India,bing,1,bing,True,bing,True
+what season is it in New Zealand,bing,1,bing,True,bing,True
+what was the previous year,bing,1,bing,True,bing,True
+did the groundhog see his shadow this year,bing,1,bing,True,bing,True
+when is the next non-school day for Minneapolis Public School,bing,1,bing,True,bing,True
+what day is Easter on this year,bing,1,bing,True,bing,True
+when is the first day of spring 2024,bing,1,bing,True,bing,True
+how many days are there until Easter 2024,bing,1,bing,True,bing,True
+which movie won the oscar for best picture in 2024?,bing,1,bing,True,bing,True
+who won the nobel prize for chemistry this past year?,bing,1,bing,True,bing,True
+how many seats do the republicans currently have in the U.S. house of representatives?,bing,1,bing,True,bing,True
+where is the 2024 democratic national convention?,bing,1,bing,True,bing,True
+who won the 2023 world series?,bing,1,bing,True,bing,True
+what is the latest news about israel and palestine?,bing,1,bing,True,bing,True
+what has recently happened in ukraine?,bing,1,bing,True,bing,True
+how many murders did chicago have in 2023?,bing,1,bing,True,bing,True
+what was the inflation rate in the US in the first quarter of this year?,bing,1,bing,True,bing,True
+how many interest rate hikes has the federal reserve made in 2024?,bing,1,bing,True,bing,True
+tell me about vladimir putin's recent trip to china,bing,1,bing,True,bing,True
+who is the most recently elected member of congress?,bing,1,bing,True,bing,True
+who testified last week in donald trump's trial in new york?,bing,1,bing,True,bing,True
+what supreme court cases were decided in the last year?,bing,1,bing,True,bing,True
+where will the eclipse be viewable next week?,bing,1,bing,True,bing,True
+what are the current new york times bestsellers?,bing,1,bing,True,bing,True
+Which film won the Oscar for Best Picture at the 2023 Academy Awards?,bing,1,bing,True,bing,True
+Who won the Oscar for Best Director at the 2023 Academy Awards?,bing,1,bing,True,bing,True
+Which actor won the Oscar for Best Actor at the 2023 Academy Awards?,bing,1,bing,True,bing,True
+Who won the Oscar for Best Actress at the 2023 Academy Awards?,bing,1,bing,True,bing,True
+Who won the Oscar for Best Supporting Actor at the 2023 Academy Awards?,bing,1,bing,True,bing,True
+Which actress won the Oscar for Best Supporting Actress at the 2023 Academy Awards?,bing,1,bing,True,bing,True
+Who won the Oscar for Best Original Screenplay at the 2023 Academy Awards?,bing,1,bing,True,bing,True
+Which screenplay won the Oscar for Best Adapted Screenplay at the 2023 Academy Awards?,bing,1,bing,True,bing,True
+Which animated film won the Oscar for Best Animated Feature at the 2023 Academy Awards?,bing,1,bing,True,bing,True
+Which film won the Oscar for Best International Feature at the 2023 Academy Awards?,bing,1,bing,True,bing,True
+Which album won the Grammy for Album of the Year at the 2023 Grammy Awards?,bing,1,bing,True,bing,True
+What song won the Grammy for Record of the Year at the2023 Grammy Awards?,bing,1,bing,True,bing,True
+Which song won the Grammy for Song of the Year at the 2023 Grammy Awards?,bing,1,bing,True,bing,True
+Who won the Grammy for Best New Artist at the 2023 Grammy Awards?,bing,1,bing,True,bing,True
+Which album won the Grammy for Best Pop Vocal Album at the 2023 Grammy Awards?,bing,1,bing,True,bing,True
+What album won the Grammy for Best Rap Album at the 2023 Grammy Awards?,bing,1,bing,True,bing,True
+Which album won the Grammy for Best R&B Album at the 2023 Grammy Awards?,bing,1,bing,True,bing,True
+What album won the Grammy for Best Rock Album at the 2023 Grammy Awards?,bing,1,bing,True,bing,True
+Which album won the Grammy for Best Country Album at the 2023 Grammy Awards?,bing,1,bing,True,bing,True
+What album won the Grammy for Best Alternative Music Album at the 2023 Grammy Awards?,bing,1,bing,True,bing,True
+Which TV series won the Emmy for Outstanding Drama Series at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Which TV series won the Emmy for Outstanding Comedy Series at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Which limited series won the Emmy for Outstanding Limited Series at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Who won the Emmy for Outstanding Lead Actor in a Drama Series at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Who won the Emmy for Outstanding Lead Actress in a Drama Series at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Who won the Emmy for Outstanding Lead Actor in a Comedy Series at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Who won the Emmy for Outstanding Lead Actress in a Comedy Series at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Who won the Emmy for Outstanding Lead Actor in a Limited Series or Movie at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Who won the Emmy for Outstanding Lead Actress in a Limited Series or Movie at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Who won the Emmy for Outstanding Supporting Actor in a Drama Series at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Who won the Emmy for Outstanding Supporting Actress in a Drama Series at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Who won the Emmy for Outstanding Supporting Actor in a Comedy Series at the 2023 Emmy Awards?,bing,1,bing,True,bing,True
+Who won the Nobel Prize in Physics in 2023 for their groundbreaking work in quantum computing?,bing,1,bing,True,bing,True
+Which scientists were awarded the Nobel Prize in Chemistry in 2023 for their development of a new technique for drug discovery?,bing,1,bing,True,bing,True
+Who received the Nobel Prize in Medicine or Physiology in 2023 for their discovery of a new class of antibiotics?,bing,1,bing,True,bing,True
+Who was awarded the Nobel Prize in Literature in 2023 for their outstanding contribution to literature?,bing,1,bing,True,bing,True
+Which organization received the Nobel Peace Prize in 2023 for their efforts in promoting global peace and disarmament?,bing,1,bing,True,bing,True
+Who won the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel in 2023 for their work on addressing inequality in developing countries?,bing,1,bing,True,bing,True
+Which country won the FIFA Men's World Cup in 2023?,bing,1,bing,True,bing,True
+Which country won the FIFA Women's World Cup in 2023?,bing,1,bing,True,bing,True
+Who won the Wimbledon Men's Singles title in 2023?,bing,1,bing,True,bing,True
+Who won the Wimbledon Women's Singles title in 2023?,bing,1,bing,True,bing,True
+Which team won the NBA Finals in 2023?,bing,1,bing,True,bing,True
+Which team won the Super Bowl in 2023?,bing,1,bing,True,bing,True
+Which team won the UEFA Champions League in 2023?,bing,1,bing,True,bing,True
+Who won the Formula 1 World Drivers' Championship in 2023?,bing,1,bing,True,bing,True
+Which team won the Formula 1 Constructors' Championship in 2023?,bing,1,bing,True,bing,True
+Who won The Masters golf tournament in 2023?,bing,1,bing,True,bing,True
+Who won the Tour de France in 2023?,bing,1,bing,True,bing,True
+Who won Superbowl LVIII?,bing,1,bing,True,bing,True
+Which novel won the Pulitzer Prize for Fiction in 2023?,bing,1,bing,True,bing,True
+What play was awarded the Pulitzer Prize for Drama in 2023?,bing,1,bing,True,bing,True
+Which book received the Pulitzer Prize for History in 2023?,bing,1,bing,True,bing,True
+Who won the Pulitzer Prize for Biography or Autobiography in 2023?,bing,1,bing,True,bing,True
+Which collection of poems was honored with the Pulitzer Prize for Poetry in 2023?,bing,1,bing,True,bing,True
+Which book was awarded the Pulitzer Prize for General Nonfiction in 2023?,bing,1,bing,True,bing,True
+What composition received the Pulitzer Prize for Music in 2023?,bing,1,bing,True,bing,True
+Who is the current prime minister of Kuwait?,bing,1,bing,True,bing,True
+Who is the current king of Denmark?,bing,1,bing,True,bing,True
+Who is the current president of Argentina?,bing,1,bing,True,bing,True
+Who is the current president of Singapore?,bing,1,bing,True,bing,True
+Who is the current prime minister of Greece?,bing,1,bing,True,bing,True
+Who is the current prime minister of Finland?,bing,1,bing,True,bing,True
+Who is the current prime minister of Algeria?,bing,1,bing,True,bing,True
+Who is the current prime minister of Cambodia?,bing,1,bing,True,bing,True
+Who is the current prime minister of Thailand?,bing,1,bing,True,bing,True
+Who is the current president of Latvia?,bing,1,bing,True,bing,True
+Who is the current president of Guatemala?,bing,1,bing,True,bing,True
+What is the speed of light in meters per second?,wiki,2,wiki,True,wiki,True
+What is the speed of light in miles per second?,wiki,2,wiki,True,wiki,True
+What is the speed of light in m/s?,wiki,2,wiki,True,wiki,True
+Can you explain abortion?,wiki,2,wiki,True,wiki,True
+What's the leegal age to drinl alcohol in US?,wiki,2,wiki,True,wiki,True
+Who assassinated the Romanov family?,wiki,2,wiki,True,wiki,True
+What is the formula for simple interest?,wiki,2,wiki,True,wiki,True
+what does c stand for in e=mc2?,wiki,2,wiki,True,wiki,True
+what does c stand for in e=mc squared?,wiki,2,wiki,True,wiki,True
+what does c stand for in e=mc^2?,wiki,2,wiki,True,wiki,True
+Which is the most dangerous spider?,wiki,2,wiki,True,wiki,True
+What is the capital of Turkey?,wiki,2,wiki,True,wiki,True
+Can you explain why countries should have favourable LGBTQ policies?,wiki,2,wiki,True,wiki,True
+Can you explain why countries should have favorable LGBTQ policies?,wiki,2,wiki,True,wiki,True
+What's the leegal age to drinc alcohol in US?,wiki,2,wiki,True,wiki,True
+What is the Das capital of Lithuania?,wiki,2,wiki,True,wiki,True
+32nd president of the United States,wiki,2,wiki,True,wiki,True
+are sharks mammals,wiki,2,wiki,True,wiki,True
+at what age do you stop growing,wiki,2,wiki,True,wiki,True
+at what age do your plate stop growing,wiki,2,wiki,True,wiki,True
+author of anthem,wiki,2,wiki,True,wiki,True
+author of the novel anthem,wiki,2,wiki,True,wiki,True
+can a fish drown,wiki,2,wiki,True,wiki,True
+can hurricanes form at the equator,wiki,2,wiki,True,wiki,True
+can you explain the Dark Ages,wiki,2,wiki,True,wiki,True
+can you give me information about the Pythagorean theorem,wiki,2,wiki,True,wiki,True
+can you tell me about Elon Musk,wiki,2,wiki,True,wiki,True
+can you tell me about Linda Brown,wiki,2,wiki,True,wiki,True
+can you tell me about the eating behavior of whales,wiki,2,wiki,True,wiki,True
+can you tell me about the US presidents,wiki,2,wiki,True,wiki,True
+Columbus came to America when,wiki,2,wiki,True,wiki,True
+compare and contrast The Crucible and McCarthyism,wiki,2,wiki,True,wiki,True
+describe equivalent fraction,wiki,2,wiki,True,wiki,True
+describe photosynthesis,wiki,2,wiki,True,wiki,True
+describe the ecosystem from a frogs perspective,wiki,2,wiki,True,wiki,True
+describe the ecosystem from a hummingbirds perspective,wiki,2,wiki,True,wiki,True
+describe the history of mathematics,wiki,2,wiki,True,wiki,True
+describe the process of meiosis,wiki,2,wiki,True,wiki,True
+describe the process of photosynthesis,wiki,2,wiki,True,wiki,True
+describe the water cycle to me,wiki,2,wiki,True,wiki,True
+did Al Gore win presidency,wiki,2,wiki,True,wiki,True
+did Franklin Pierce ever married,wiki,2,wiki,True,wiki,True
+do beluga whale have teeth,wiki,2,wiki,True,wiki,True
+do hurricanes form at the equator,wiki,2,wiki,True,wiki,True
+do we yawn because we need more oxygen,wiki,2,wiki,True,wiki,True
+does lightning always touch ground,wiki,2,wiki,True,wiki,True
+does your bone marrow grow back,wiki,2,wiki,True,wiki,True
+examples of dystopian fiction,wiki,2,wiki,True,wiki,True
+explain a hook related to writing,wiki,2,wiki,True,wiki,True
+explain ecosystems from the perspective of a frog,wiki,2,wiki,True,wiki,True
+explain pi r squared,wiki,2,wiki,True,wiki,True
+explain primary colors to me as if I was a child,wiki,2,wiki,True,wiki,True
+explain primary colors to me as if I was a college student,wiki,2,wiki,True,wiki,True
+explain primary colors to me as if I was in grade 3,wiki,2,wiki,True,wiki,True
+explain the Dark Ages,wiki,2,wiki,True,wiki,True
+explain the historical relevance of the Dark Ages,wiki,2,wiki,True,wiki,True
+Explain the law of motion,wiki,2,wiki,True,wiki,True
+explain the lifecycle of rain,wiki,2,wiki,True,wiki,True
+explain the water cycle,wiki,2,wiki,True,wiki,True
+first president of the United States,wiki,2,wiki,True,wiki,True
+give an example of force,wiki,2,wiki,True,wiki,True
+give me a specific example of fear in The Crucible,wiki,2,wiki,True,wiki,True
+Give me a summary of the Articles of the Constitution,wiki,2,wiki,True,wiki,True
+help me understand photosynthesis,wiki,2,wiki,True,wiki,True
+how big is Norman Island in area,wiki,2,wiki,True,wiki,True
+how big was the first computer,wiki,2,wiki,True,wiki,True
+how did Abraham Lincoln die,wiki,2,wiki,True,wiki,True
+how did the Anglo-Saxons come to be,wiki,2,wiki,True,wiki,True
+how did the Middle Ages and the Renaissance Era differ,wiki,2,wiki,True,wiki,True
+how did the world population respond to the Green Revolution,wiki,2,wiki,True,wiki,True
+how did Trotsky die,wiki,2,wiki,True,wiki,True
+how do elephants communicate with their trunks,wiki,2,wiki,True,wiki,True
+how do frogs play a role in their environment,wiki,2,wiki,True,wiki,True
+how do I tell wind speed by using isobar,wiki,2,wiki,True,wiki,True
+how do we tell the wind speed,wiki,2,wiki,True,wiki,True
+how does an LED work,wiki,2,wiki,True,wiki,True
+how does social class show up in Emma by Jane Austen,wiki,2,wiki,True,wiki,True
+how does the book The Elephant Man deal with The Human Condition,wiki,2,wiki,True,wiki,True
+how does the Electoral College work,wiki,2,wiki,True,wiki,True
+how does the heart pump blood,wiki,2,wiki,True,wiki,True
+how far away can you hear thunder,wiki,2,wiki,True,wiki,True
+how far away can you hear thunder over the oceans,wiki,2,wiki,True,wiki,True
+how far away is it to the Sun,wiki,2,wiki,True,wiki,True
+how far away is the Earth from the Sun,wiki,2,wiki,True,wiki,True
+how far away is the Moon in miles,wiki,2,wiki,True,wiki,True
+how far away is the Sun from Earth,wiki,2,wiki,True,wiki,True
+how far in kilometers is it to the Moon,wiki,2,wiki,True,wiki,True
+how far is it to the Moon,wiki,2,wiki,True,wiki,True
+how far is it to the Moon in miles,wiki,2,wiki,True,wiki,True
+how far is the Moon,wiki,2,wiki,True,wiki,True
+how far is the Moon away from the Earth,wiki,2,wiki,True,wiki,True
+how far is the moon from the earth in kilometers,wiki,2,wiki,True,wiki,True
+how far is the moon from the earth in km,wiki,2,wiki,True,wiki,True
+how far is the moon from the earth in miles,wiki,2,wiki,True,wiki,True
+how how old is the city of Tallinn,wiki,2,wiki,True,wiki,True
+how important is frogs to the ecosystem,wiki,2,wiki,True,wiki,True
+how is chlorophyll like a solar panel,wiki,2,wiki,True,wiki,True
+how is chlorophyll similar to a solar panel,wiki,2,wiki,True,wiki,True
+how is chlorophyll similar to solar panels,wiki,2,wiki,True,wiki,True
+how is Snow White similar to Cinderella,wiki,2,wiki,True,wiki,True
+how is water made,wiki,2,wiki,True,wiki,True
+how long does working memory last,wiki,2,wiki,True,wiki,True
+how long will it take you to climb Mount Everest,wiki,2,wiki,True,wiki,True
+how many arms does a squid have,wiki,2,wiki,True,wiki,True
+how many arms does an octopus have,wiki,2,wiki,True,wiki,True
+how many babies are born each day in the United States,wiki,2,wiki,True,wiki,True
+how many bones are there in the human body,wiki,2,wiki,True,wiki,True
+how many bones of the body,wiki,2,wiki,True,wiki,True
+how many books are in the Diary of Wimpy Kid,wiki,2,wiki,True,wiki,True
+how many calories in a hamburger patty,wiki,2,wiki,True,wiki,True
+how many calories in one green pepper,wiki,2,wiki,True,wiki,True
+how many calories in one leaf of lettuce,wiki,2,wiki,True,wiki,True
+how many calories in one serving of mustard,wiki,2,wiki,True,wiki,True
+how many Cherokees died in the Trail of Tears,wiki,2,wiki,True,wiki,True
+how many countries are in the world,wiki,2,wiki,True,wiki,True
+how many days are in the month of February,wiki,2,wiki,True,wiki,True
+how many different kinds of frogs are there in the world,wiki,2,wiki,True,wiki,True
+how many eyeballs does a squid have,wiki,2,wiki,True,wiki,True
+how many eyes does a squid have,wiki,2,wiki,True,wiki,True
+how many eyes does an octopus have,wiki,2,wiki,True,wiki,True
+how many gallons of water are in the ocean,wiki,2,wiki,True,wiki,True
+how many meters is it to the Moon,wiki,2,wiki,True,wiki,True
+how many moons are around Saturn,wiki,2,wiki,True,wiki,True
+how many moons does Neptune have,wiki,2,wiki,True,wiki,True
+how many people are retired in the United States,wiki,2,wiki,True,wiki,True
+how many people live in Oxford,wiki,2,wiki,True,wiki,True
+how many presidents have we had from Connecticut,wiki,2,wiki,True,wiki,True
+how many presidents of the United States are there,wiki,2,wiki,True,wiki,True
+how many Super Bowls did the 49ers win,wiki,2,wiki,True,wiki,True
+how many Super Bowls did the Raiders win,wiki,2,wiki,True,wiki,True
+how many teeth are in a cat's mouth,wiki,2,wiki,True,wiki,True
+how many teeth are in a human's mouth,wiki,2,wiki,True,wiki,True
+how many teeth did a Megalodon have,wiki,2,wiki,True,wiki,True
+how many teeth do dogs have,wiki,2,wiki,True,wiki,True
+how many teeth do orcas have,wiki,2,wiki,True,wiki,True
+how many teeth does a great white shark have,wiki,2,wiki,True,wiki,True
+how many teeth does a tiger shark have,wiki,2,wiki,True,wiki,True
+how many tribes are there in the United States,wiki,2,wiki,True,wiki,True
+how much does Mount Everest weigh in kilograms,wiki,2,wiki,True,wiki,True
+how much water does an almond tree need per day,wiki,2,wiki,True,wiki,True
+how old is Belfast,wiki,2,wiki,True,wiki,True
+how old is Estonia,wiki,2,wiki,True,wiki,True
+how old is Marilyn Monroe,wiki,2,wiki,True,wiki,True
+how old is the average first grader in the United States,wiki,2,wiki,True,wiki,True
+how old is the city of Tallinn,wiki,2,wiki,True,wiki,True
+how old is the Earth,wiki,2,wiki,True,wiki,True
+how old is the moon,wiki,2,wiki,True,wiki,True
+how tall is Mount Everest,wiki,2,wiki,True,wiki,True
+how tall is the Eiffel Tower,wiki,2,wiki,True,wiki,True
+how tall is the tallest man in the world,wiki,2,wiki,True,wiki,True
+how to find the volume of a sphere,wiki,2,wiki,True,wiki,True
+how to solve quadratic equations,wiki,2,wiki,True,wiki,True
+how were the Hawaii Islands formed,wiki,2,wiki,True,wiki,True
+I want to learn more about horses,wiki,2,wiki,True,wiki,True
+in what year did the Revolutionary War start,wiki,2,wiki,True,wiki,True
+is Pluto a planet,wiki,2,wiki,True,wiki,True
+is the moon's orbit circular,wiki,2,wiki,True,wiki,True
+let us talk about the major themes of Hamlet,wiki,2,wiki,True,wiki,True
+share what a millipede looks like,wiki,2,wiki,True,wiki,True
+Summarize the book Things Fall Apart,wiki,2,wiki,True,wiki,True
+teach me about elephants,wiki,2,wiki,True,wiki,True
+teach me about equivalent fractions,wiki,2,wiki,True,wiki,True
+teach me about Saint Patrick's Day,wiki,2,wiki,True,wiki,True
+teach me about sea turtles,wiki,2,wiki,True,wiki,True
+teach me about wolves,wiki,2,wiki,True,wiki,True
+teach us about giraffes,wiki,2,wiki,True,wiki,True
+tell me a fact about Elon Musk,wiki,2,wiki,True,wiki,True
+tell me about 911,wiki,2,wiki,True,wiki,True
+tell me about African elephants,wiki,2,wiki,True,wiki,True
+tell me about bears,wiki,2,wiki,True,wiki,True
+tell me about bears and hibernating,wiki,2,wiki,True,wiki,True
+tell me about black footed ferrets,wiki,2,wiki,True,wiki,True
+tell me about cats,wiki,2,wiki,True,wiki,True
+tell me about Donald Trump,wiki,2,wiki,True,wiki,True
+tell me about how frogs interact in their ecosystem,wiki,2,wiki,True,wiki,True
+tell me about hydrostatic weighing,wiki,2,wiki,True,wiki,True
+tell me about photosynthesis,wiki,2,wiki,True,wiki,True
+tell me about plant cells,wiki,2,wiki,True,wiki,True
+tell me about school buses,wiki,2,wiki,True,wiki,True
+tell me about the benefits of the drawbacks of the gambling industry,wiki,2,wiki,True,wiki,True
+tell me about the Bronze Age collapse,wiki,2,wiki,True,wiki,True
+tell me about the difference between prokaryotic and eukaryotic cells in a full sentence,wiki,2,wiki,True,wiki,True
+tell me about the first moon landing,wiki,2,wiki,True,wiki,True
+tell me about the Himalayas,wiki,2,wiki,True,wiki,True
+tell me about the Ice Age,wiki,2,wiki,True,wiki,True
+tell me about the Long Walk of the Navajo,wiki,2,wiki,True,wiki,True
+tell me about the Miller Urey experiment,wiki,2,wiki,True,wiki,True
+tell me about the nucleus,wiki,2,wiki,True,wiki,True
+tell me about the Oregon Trail,wiki,2,wiki,True,wiki,True
+tell me about the slavery in during the Civil War,wiki,2,wiki,True,wiki,True
+tell me about the universe,wiki,2,wiki,True,wiki,True
+tell me about Wyoming,wiki,2,wiki,True,wiki,True
+tell me about Yellowstone National Park,wiki,2,wiki,True,wiki,True
+tell me the difference between a control group and experimental group,wiki,2,wiki,True,wiki,True
+thank you tell me about Pearson Wyoming,wiki,2,wiki,True,wiki,True
+the name of Thor's hammer,wiki,2,wiki,True,wiki,True
+what animal has the most teeth,wiki,2,wiki,True,wiki,True
+what animals are on the endangered species list,wiki,2,wiki,True,wiki,True
+what AR level is the boy who harnessed the wind,wiki,2,wiki,True,wiki,True
+what are challenges to AI.,wiki,2,wiki,True,wiki,True
+what are different types of lava,wiki,2,wiki,True,wiki,True
+what are examples of a quadratic function on a graph,wiki,2,wiki,True,wiki,True
+what are kids,wiki,2,wiki,True,wiki,True
+what are primary colors,wiki,2,wiki,True,wiki,True
+what are some fun facts about elephants,wiki,2,wiki,True,wiki,True
+what are some of the physical characteristics of the black-footed ferret,wiki,2,wiki,True,wiki,True
+what are the 3 main strands of Elementary algebra,wiki,2,wiki,True,wiki,True
+what are the 3 stages of memory,wiki,2,wiki,True,wiki,True
+what are the benefits and disadvantages of the gambling industry,wiki,2,wiki,True,wiki,True
+what are the causes of the Civil War,wiki,2,wiki,True,wiki,True
+what are the human body systems,wiki,2,wiki,True,wiki,True
+what are the iste standards,wiki,2,wiki,True,wiki,True
+what are the kinematic equations,wiki,2,wiki,True,wiki,True
+what are the major themes of the Elephant Man,wiki,2,wiki,True,wiki,True
+what are the migration pattern of whales,wiki,2,wiki,True,wiki,True
+what are the origins of covid,wiki,2,wiki,True,wiki,True
+what are the origins of covid SARS virus,wiki,2,wiki,True,wiki,True
+what are the origins of SARS,wiki,2,wiki,True,wiki,True
+what are the primary colors,wiki,2,wiki,True,wiki,True
+what are the properties of irregular bones,wiki,2,wiki,True,wiki,True
+what are the rock houses in Turkey,wiki,2,wiki,True,wiki,True
+what causes earthquakes,wiki,2,wiki,True,wiki,True
+what causes January 6th,wiki,2,wiki,True,wiki,True
+what color are frogs,wiki,2,wiki,True,wiki,True
+what colors are in the rainbow,wiki,2,wiki,True,wiki,True
+what do black-footed ferret eat,wiki,2,wiki,True,wiki,True
+what do frogs eat for dinner,wiki,2,wiki,True,wiki,True
+what does a groundhog look like,wiki,2,wiki,True,wiki,True
+what does GTA stand for,wiki,2,wiki,True,wiki,True
+what does it mean to say evidence,wiki,2,wiki,True,wiki,True
+what does potassium do in the human body,wiki,2,wiki,True,wiki,True
+what does the kidney bladder look like,wiki,2,wiki,True,wiki,True
+what does the name Sydney mean,wiki,2,wiki,True,wiki,True
+what effects does the hummingbird have on the ecosystem,wiki,2,wiki,True,wiki,True
+what is a benthic theater,wiki,2,wiki,True,wiki,True
+what is a biconditional statement,wiki,2,wiki,True,wiki,True
+what is a brontosaurus,wiki,2,wiki,True,wiki,True
+what is a carrot,wiki,2,wiki,True,wiki,True
+what is a cat,wiki,2,wiki,True,wiki,True
+what is a cerebral hemorrhage,wiki,2,wiki,True,wiki,True
+what is a claim,wiki,2,wiki,True,wiki,True
+what is a claim in an argument,wiki,2,wiki,True,wiki,True
+what is a cop,wiki,2,wiki,True,wiki,True
+what is a female dog called,wiki,2,wiki,True,wiki,True
+what is a googolplex,wiki,2,wiki,True,wiki,True
+what is a habitat,wiki,2,wiki,True,wiki,True
+what is a main idea,wiki,2,wiki,True,wiki,True
+what is a medal of honor,wiki,2,wiki,True,wiki,True
+what is a Molotov cocktail,wiki,2,wiki,True,wiki,True
+what is a neutron star,wiki,2,wiki,True,wiki,True
+what is a noun,wiki,2,wiki,True,wiki,True
+what is a physicist,wiki,2,wiki,True,wiki,True
+what is a plant cell,wiki,2,wiki,True,wiki,True
+what is a polynomial,wiki,2,wiki,True,wiki,True
+what is a product of photosynthesis,wiki,2,wiki,True,wiki,True
+what is a responsibility,wiki,2,wiki,True,wiki,True
+what is a table,wiki,2,wiki,True,wiki,True
+what is a turbot,wiki,2,wiki,True,wiki,True
+what is a Tyrannosaurus Rex,wiki,2,wiki,True,wiki,True
+what is algebra,wiki,2,wiki,True,wiki,True
+what is an argumentative essay,wiki,2,wiki,True,wiki,True
+what is an asterism,wiki,2,wiki,True,wiki,True
+what is an English bulldog,wiki,2,wiki,True,wiki,True
+what is an insurrection,wiki,2,wiki,True,wiki,True
+what is an octothorpe,wiki,2,wiki,True,wiki,True
+what is Astrology,wiki,2,wiki,True,wiki,True
+what is Belfast famous for,wiki,2,wiki,True,wiki,True
+what is bya in terms of measurement stand for,wiki,2,wiki,True,wiki,True
+what is canva,wiki,2,wiki,True,wiki,True
+what is causing climate change,wiki,2,wiki,True,wiki,True
+what is central idea,wiki,2,wiki,True,wiki,True
+what is chickens,wiki,2,wiki,True,wiki,True
+what is citing evidence,wiki,2,wiki,True,wiki,True
+what is claustrophobia,wiki,2,wiki,True,wiki,True
+what is claustrophobic,wiki,2,wiki,True,wiki,True
+what is Debbie Does Dallas,wiki,2,wiki,True,wiki,True
+what is Fermat's Last Theorem,wiki,2,wiki,True,wiki,True
+what is Groundhog Day,wiki,2,wiki,True,wiki,True
+what is gvt,wiki,2,wiki,True,wiki,True
+what is human centered design,wiki,2,wiki,True,wiki,True
+what is human trafficking,wiki,2,wiki,True,wiki,True
+what is Isaac Newton's most famous for,wiki,2,wiki,True,wiki,True
+what is Jupiter's largest moon,wiki,2,wiki,True,wiki,True
+what is mitosis,wiki,2,wiki,True,wiki,True
+what is Newton's law of inertia,wiki,2,wiki,True,wiki,True
+what is Newton's third law of motion,wiki,2,wiki,True,wiki,True
+what is one of the products of photosynthesis,wiki,2,wiki,True,wiki,True
+what is OPS in baseball,wiki,2,wiki,True,wiki,True
+what is Pennsylvania's state fruit,wiki,2,wiki,True,wiki,True
+what is perimeter,wiki,2,wiki,True,wiki,True
+what is pi,wiki,2,wiki,True,wiki,True
+what is pi r squared,wiki,2,wiki,True,wiki,True
+what is racism,wiki,2,wiki,True,wiki,True
+what is slavery,wiki,2,wiki,True,wiki,True
+what is the average amount of water per day that an almond tree needs,wiki,2,wiki,True,wiki,True
+what is the average male height in the US,wiki,2,wiki,True,wiki,True
+what is the average temperature in Minnesota in the winter,wiki,2,wiki,True,wiki,True
+what is the boiling point of water,wiki,2,wiki,True,wiki,True
+what is the boiling point of water in centigrade,wiki,2,wiki,True,wiki,True
+what is the capital of China,wiki,2,wiki,True,wiki,True
+what is the capital of England,wiki,2,wiki,True,wiki,True
+what is the capital of Estonia,wiki,2,wiki,True,wiki,True
+what is the capital of Thailand,wiki,2,wiki,True,wiki,True
+what is the capital of the United States,wiki,2,wiki,True,wiki,True
+what is the cause of the Civil War,wiki,2,wiki,True,wiki,True
+what is the cause of the of the slavery,wiki,2,wiki,True,wiki,True
+what is the circumference of the Earth,wiki,2,wiki,True,wiki,True
+what is the computer repair process,wiki,2,wiki,True,wiki,True
+what is the control center of the cell,wiki,2,wiki,True,wiki,True
+what is the density of water,wiki,2,wiki,True,wiki,True
+what is the diameter of Ganymede,wiki,2,wiki,True,wiki,True
+what is the difference between a frog and a toad,wiki,2,wiki,True,wiki,True
+what is the difference between a fruit and a vegetable,wiki,2,wiki,True,wiki,True
+what is the difference between a prokaryotic and eukaryotic cell,wiki,2,wiki,True,wiki,True
+what is the difference between a squid and an octopus,wiki,2,wiki,True,wiki,True
+what is the difference between a vegetable and a fruit,wiki,2,wiki,True,wiki,True
+what is the distance to the Moon,wiki,2,wiki,True,wiki,True
+what is the equation from converting Fahrenheit to Celsius,wiki,2,wiki,True,wiki,True
+what is the exact number of pi,wiki,2,wiki,True,wiki,True
+what is the first plants fossil,wiki,2,wiki,True,wiki,True
+what is the formula for photosynthesis,wiki,2,wiki,True,wiki,True
+what is the formula for respiration,wiki,2,wiki,True,wiki,True
+what is the formula for the volume of a right square pyramid,wiki,2,wiki,True,wiki,True
+what is the heaviest organ in the human body,wiki,2,wiki,True,wiki,True
+what is the history of the Han Dynasty,wiki,2,wiki,True,wiki,True
+what is the Holocaust,wiki,2,wiki,True,wiki,True
+what is the job of Catcher in baseball,wiki,2,wiki,True,wiki,True
+what is the largest city in the state of New Mexico,wiki,2,wiki,True,wiki,True
+what is the largest school district in the country,wiki,2,wiki,True,wiki,True
+what is the legacy of the British Empire,wiki,2,wiki,True,wiki,True
+what is the lifespan of crested gecko,wiki,2,wiki,True,wiki,True
+what is the main theme of Midsummer Night's Dream,wiki,2,wiki,True,wiki,True
+what is the most famous mission to space,wiki,2,wiki,True,wiki,True
+what is the most popular Diary of the Wimpy Kid books,wiki,2,wiki,True,wiki,True
+what is the most popular ice cream in the United States,wiki,2,wiki,True,wiki,True
+what is the most venomous snake,wiki,2,wiki,True,wiki,True
+what is the name of the king of England,wiki,2,wiki,True,wiki,True
+what is the name of the state north of California,wiki,2,wiki,True,wiki,True
+what is the NBA,wiki,2,wiki,True,wiki,True
+what is the number to degrees in a circle,wiki,2,wiki,True,wiki,True
+what is the origin name of America,wiki,2,wiki,True,wiki,True
+what is the percentage of water in a body,wiki,2,wiki,True,wiki,True
+what is the percentage of yellow marrow to red marrow in the femur,wiki,2,wiki,True,wiki,True
+what is the peripheral nervous system,wiki,2,wiki,True,wiki,True
+what is the plot of Footloose,wiki,2,wiki,True,wiki,True
+what is the polynomial,wiki,2,wiki,True,wiki,True
+what is the population of Kern County California,wiki,2,wiki,True,wiki,True
+what is the primary cause of the Civil War,wiki,2,wiki,True,wiki,True
+what is the Pythagorean,wiki,2,wiki,True,wiki,True
+what is the Pythagorean theorem,wiki,2,wiki,True,wiki,True
+what is the quadratic equation,wiki,2,wiki,True,wiki,True
+what is the reproductive system,wiki,2,wiki,True,wiki,True
+what is the significance of the Rosetta Stone,wiki,2,wiki,True,wiki,True
+what is the specific heat of water,wiki,2,wiki,True,wiki,True
+what is the sphincter,wiki,2,wiki,True,wiki,True
+what is the tallest building in the world,wiki,2,wiki,True,wiki,True
+what is the temperature on Mars,wiki,2,wiki,True,wiki,True
+what is the theme of A Rose for Emily,wiki,2,wiki,True,wiki,True
+what is the theme to Angela's Ashes,wiki,2,wiki,True,wiki,True
+what is the Titanic,wiki,2,wiki,True,wiki,True
+what is the turtle,wiki,2,wiki,True,wiki,True
+what is the typical microscope for most science classes,wiki,2,wiki,True,wiki,True
+what is the Unicorn,wiki,2,wiki,True,wiki,True
+what is the vertex of a quadratic,wiki,2,wiki,True,wiki,True
+what is the water cycle,wiki,2,wiki,True,wiki,True
+what is translanguaging,wiki,2,wiki,True,wiki,True
+what kind of animals are frogs,wiki,2,wiki,True,wiki,True
+what makes plants green,wiki,2,wiki,True,wiki,True
+what number president was Abraham Lincoln,wiki,2,wiki,True,wiki,True
+what percentage of the earth's surface is water,wiki,2,wiki,True,wiki,True
+what programming language is used to create AI,wiki,2,wiki,True,wiki,True
+what programming languages is used to generate AI,wiki,2,wiki,True,wiki,True
+what purpose does water have in a body,wiki,2,wiki,True,wiki,True
+what role do frogs play,wiki,2,wiki,True,wiki,True
+what role do frogs play in the ecosystem,wiki,2,wiki,True,wiki,True
+what role do frogs play in their ecosystem,wiki,2,wiki,True,wiki,True
+what roles did the Jews play in the Holocaust,wiki,2,wiki,True,wiki,True
+what route did Amerigo Vespucci take,wiki,2,wiki,True,wiki,True
+what timezone is London in,wiki,2,wiki,True,wiki,True
+what type of animal is a frog,wiki,2,wiki,True,wiki,True
+what was Dwight Eisenhower born,wiki,2,wiki,True,wiki,True
+what was in the Starr report,wiki,2,wiki,True,wiki,True
+what was the cause of the Civil War,wiki,2,wiki,True,wiki,True
+what was the cause of the Revolutionary War,wiki,2,wiki,True,wiki,True
+what was the cause of the war of 1812,wiki,2,wiki,True,wiki,True
+what was the caused of the Civil War,wiki,2,wiki,True,wiki,True
+what was the Han Dynasty,wiki,2,wiki,True,wiki,True
+what was the Han Dynasty in China,wiki,2,wiki,True,wiki,True
+what was the Renaissance age,wiki,2,wiki,True,wiki,True
+what was the world population at the beginning of the first Agricultural Revolution,wiki,2,wiki,True,wiki,True
+what was the world population during the Green Revolution,wiki,2,wiki,True,wiki,True
+what were the major themes of Hamlet,wiki,2,wiki,True,wiki,True
+what year did Bessie Coleman die,wiki,2,wiki,True,wiki,True
+what year did Shakespeare write his first play,wiki,2,wiki,True,wiki,True
+what year did the dinosaurs go extinct,wiki,2,wiki,True,wiki,True
+what year did the United States started slavery,wiki,2,wiki,True,wiki,True
+what year was Aladdin made,wiki,2,wiki,True,wiki,True
+what year was Emily Dickinson born,wiki,2,wiki,True,wiki,True
+what year was Julius Caesar born,wiki,2,wiki,True,wiki,True
+what year was Leonardo DaVinci born,wiki,2,wiki,True,wiki,True
+what year was Mission San Antonio de Alcala built,wiki,2,wiki,True,wiki,True
+what year was Mission San Diego de Alcala built,wiki,2,wiki,True,wiki,True
+when did Amerigo Vespucci sail across America,wiki,2,wiki,True,wiki,True
+when did Christopher Columbus claim land for his King in Spain,wiki,2,wiki,True,wiki,True
+when did Newton live,wiki,2,wiki,True,wiki,True
+when did the first computer come out,wiki,2,wiki,True,wiki,True
+when did the Revolutionary War start in America,wiki,2,wiki,True,wiki,True
+when did the Wright brothers fly the first airplane,wiki,2,wiki,True,wiki,True
+when was Abraham Lincoln born,wiki,2,wiki,True,wiki,True
+when was dr. pepper invented,wiki,2,wiki,True,wiki,True
+when was Footloose made,wiki,2,wiki,True,wiki,True
+when was fortnite created,wiki,2,wiki,True,wiki,True
+when was Google invented,wiki,2,wiki,True,wiki,True
+when was Jane Austen born,wiki,2,wiki,True,wiki,True
+when was Minecraft created,wiki,2,wiki,True,wiki,True
+when was Plants vs. Zombies created,wiki,2,wiki,True,wiki,True
+when was Roblox created,wiki,2,wiki,True,wiki,True
+when was the Declaration of Independence signed,wiki,2,wiki,True,wiki,True
+when was the first Xbox made,wiki,2,wiki,True,wiki,True
+when was the first Xbox released,wiki,2,wiki,True,wiki,True
+when was the novel Anthem written,wiki,2,wiki,True,wiki,True
+where are camels from,wiki,2,wiki,True,wiki,True
+where did an English bulldog originate,wiki,2,wiki,True,wiki,True
+where do puffer fish sleep,wiki,2,wiki,True,wiki,True
+where do pufferfish sleep,wiki,2,wiki,True,wiki,True
+where do quokkas live,wiki,2,wiki,True,wiki,True
+where is Belfast,wiki,2,wiki,True,wiki,True
+where is Norman Island,wiki,2,wiki,True,wiki,True
+where is the city of Tallinn,wiki,2,wiki,True,wiki,True
+where is Windsor,wiki,2,wiki,True,wiki,True
+where was dr. Pepper invented,wiki,2,wiki,True,wiki,True
+which animal has the most teeth,wiki,2,wiki,True,wiki,True
+which is larger the Empire State Building or the Eiffel Tower,wiki,2,wiki,True,wiki,True
+which is taller the Empire State Building or the Eiffel Tower,wiki,2,wiki,True,wiki,True
+which was the first of the California missions,wiki,2,wiki,True,wiki,True
+who are the most influential presidents United States history,wiki,2,wiki,True,wiki,True
+who created the statue of the David,wiki,2,wiki,True,wiki,True
+who developed early forms of algebra,wiki,2,wiki,True,wiki,True
+who discovered Ganymede,wiki,2,wiki,True,wiki,True
+who invented algebra,wiki,2,wiki,True,wiki,True
+who invented equals mc squared,wiki,2,wiki,True,wiki,True
+who invented multiplication,wiki,2,wiki,True,wiki,True
+who invented the hovercraft,wiki,2,wiki,True,wiki,True
+who is Albert Einstein,wiki,2,wiki,True,wiki,True
+who is an isotope,wiki,2,wiki,True,wiki,True
+who is Christopher Nolan,wiki,2,wiki,True,wiki,True
+who is Cleopatra,wiki,2,wiki,True,wiki,True
+who is Donald Trump,wiki,2,wiki,True,wiki,True
+who is George Washington,wiki,2,wiki,True,wiki,True
+who is Henry the 8th King of England,wiki,2,wiki,True,wiki,True
+who is influential on the union side of the Civil War,wiki,2,wiki,True,wiki,True
+who is Isaac Newton,wiki,2,wiki,True,wiki,True
+who is James Walton,wiki,2,wiki,True,wiki,True
+who is Joe Alwyn,wiki,2,wiki,True,wiki,True
+who is King Henry the 8th,wiki,2,wiki,True,wiki,True
+who is the 16th president of the United States,wiki,2,wiki,True,wiki,True
+who is the 32nd president of the United States,wiki,2,wiki,True,wiki,True
+who is the author of anthem,wiki,2,wiki,True,wiki,True
+who is the author of the novel anthem,wiki,2,wiki,True,wiki,True
+who is the head Monarch of the UK,wiki,2,wiki,True,wiki,True
+who is the king,wiki,2,wiki,True,wiki,True
+who is the last king or queen of the British Empire,wiki,2,wiki,True,wiki,True
+who is the main character in Midsummer Night's Dream,wiki,2,wiki,True,wiki,True
+who is the president of Duquesne University,wiki,2,wiki,True,wiki,True
+who is the queen,wiki,2,wiki,True,wiki,True
+who is Walter White,wiki,2,wiki,True,wiki,True
+who was Cleopatra,wiki,2,wiki,True,wiki,True
+who was Leonardo DaVinci,wiki,2,wiki,True,wiki,True
+who was the 14th president,wiki,2,wiki,True,wiki,True
+who was the 15th president of the United States,wiki,2,wiki,True,wiki,True
+who was the 16th president,wiki,2,wiki,True,wiki,True
+who was the 16th president of the United States,wiki,2,wiki,True,wiki,True
+who was the 16th president of the United States of America,wiki,2,wiki,True,wiki,True
+who was the 16th president United States,wiki,2,wiki,True,wiki,True
+who was the 18th President of the United States,wiki,2,wiki,True,wiki,True
+who was the 32nd president,wiki,2,wiki,True,wiki,True
+who was the 32nd president of the United States,wiki,2,wiki,True,wiki,True
+who was the creator of the h-bomb,wiki,2,wiki,True,wiki,True
+who was the first president,wiki,2,wiki,True,wiki,True
+who was Ulysses S Grant,wiki,2,wiki,True,wiki,True
+who was Winston Churchill,wiki,2,wiki,True,wiki,True
+who were the presidents who were impeached,wiki,2,wiki,True,wiki,True
+who won Super Bowl 3,wiki,2,wiki,True,wiki,True
+why are frogs green,wiki,2,wiki,True,wiki,True
+why are pineapples yellow,wiki,2,wiki,True,wiki,True
+why did the United States Annex Hawaii,wiki,2,wiki,True,wiki,True
+why did World War one start,wiki,2,wiki,True,wiki,True
+why do high pressure systems cause drought,wiki,2,wiki,True,wiki,True
+why do negative numbers get smaller as they get bigger,wiki,2,wiki,True,wiki,True
+why do people socially loaf,wiki,2,wiki,True,wiki,True
+why do possums play dead,wiki,2,wiki,True,wiki,True
+why do sharks have fins,wiki,2,wiki,True,wiki,True
+why do we have muscles,wiki,2,wiki,True,wiki,True
+why do we yawn,wiki,2,wiki,True,wiki,True
+why does water have a high specific heat,wiki,2,wiki,True,wiki,True
+why is Pluto not a planet,wiki,2,wiki,True,wiki,True
+why is Pluto not considered a planet,wiki,2,wiki,True,wiki,True
+why is the Midwest known as Tornado Alley,wiki,2,wiki,True,wiki,True
+why is the sky blue,wiki,2,wiki,True,wiki,True
+why is water important for human,wiki,2,wiki,True,wiki,True
+who is the prime minister of the United Kingdom,wiki,2,wiki,True,wiki,True
+who was the last president of the United States,wiki,2,wiki,True,wiki,True
+who is the first president,wiki,2,wiki,True,wiki,True
+what are 10 components of a plant cell,wiki,2,wiki,True,wiki,True
+list Greek gods,wiki,2,wiki,True,wiki,True
+how many students are in Blaine High School,wiki,2,wiki,True,wiki,True

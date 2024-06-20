@@ -26,7 +26,7 @@ Only use this category for queries about events in the past 3 years, not histori
 # fscore_after_default: [0.8232 0.8541 0.9089]
 # support_after_default: [147 291 569]
 
-# time per query: 0.2747
+# time per query: 0.2713
 
 query,route,mistral_7b_response,mistral_7b_category,correctness,defaulted_category,defaulted_correctness
 how much does Alexa cost a year,bing,2,gemini,False,gemini,False

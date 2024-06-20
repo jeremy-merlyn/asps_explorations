@@ -1,21 +1,21 @@
 query,route,mistral_7b_response,mistral_7b_category,correctness,defaulted_category,defaulted_correctness
-When are elections due in US?,bing,3,bing,True,bing,True
-When are elections due in the US?,bing,3,bing,True,bing,True
-When are the upcoming elections in the US?,bing,3,bing,True,bing,True
-When are the next elections in the US?,bing,3,bing,True,bing,True
-When is the next election in the US?,bing,3,bing,True,bing,True
+When are elections due in US?,bing,1,wiki,False,wiki,False
+When are elections due in the US?,bing,1,wiki,False,wiki,False
+When are the upcoming elections in the US?,bing,1,wiki,False,wiki,False
+When are the next elections in the US?,bing,1,wiki,False,wiki,False
+When is the next election in the US?,bing,1,wiki,False,wiki,False
 What is the speed of light in meters per second?,wiki,1,wiki,True,wiki,True
 What is the speed of light in miles per second?,wiki,1,wiki,True,wiki,True
 What is the speed of light in m/s?,wiki,1,wiki,True,wiki,True
 Can you explain abortion?,wiki,1,wiki,True,wiki,True
 Solve for x : 2x + 22 =  x  + 1,gemini,2,gemini,True,gemini,True
 What's the leegal age to drinl alcohol in US?,wiki,1,wiki,True,wiki,True
-Who won the most recent general elections in India?,bing,3,bing,True,bing,True
-When is the 2024 ISTE conference?,bing,3,bing,True,bing,True
-Which countries are at war today?,bing,3,bing,True,bing,True
+Who won the most recent general elections in India?,bing,1,wiki,False,wiki,False
+When is the 2024 ISTE conference?,bing,1,wiki,False,wiki,False
+Which countries are at war today?,bing,1,wiki,False,wiki,False
 How do you make a Molotov cocktail?,gemini,2,gemini,True,gemini,True
-Is ISIS still a threat?,bing,3,bing,True,bing,True
-Who assassinated the Romanov family?,wiki,3,bing,False,bing,False
+Is ISIS still a threat?,bing,1,wiki,False,wiki,False
+Who assassinated the Romanov family?,wiki,1,wiki,True,wiki,True
 What is the formula for simple interest?,wiki,1,wiki,True,wiki,True
 What is 2 + 2?,gemini,2,gemini,True,gemini,True
 What is 7/0?,gemini,2,gemini,True,gemini,True
@@ -34,7 +34,7 @@ What's the leegal age to drinc alcohol in US?,wiki,1,wiki,True,wiki,True
 What is the Das capital of Lithuania?,wiki,1,wiki,True,wiki,True
 Translate “I love Crepes” to French,gemini,2,gemini,True,gemini,True
 How do you say 'I love you' in Spanish?,gemini,2,gemini,True,gemini,True
-Give me a lesson plan on photosynthesis,gemini,2,gemini,True,gemini,True
+Give me a lesson plan on photosynthesis,gemini,1,wiki,False,wiki,False
 Can you give me a lesson plan on the water cycle?,gemini,2,gemini,True,gemini,True
 32nd president of the United States,wiki,1,wiki,True,wiki,True
 are computer beings real,gemini,1,wiki,False,wiki,False
@@ -46,7 +46,7 @@ author of the novel anthem,wiki,1,wiki,True,wiki,True
 can a fish drown,wiki,1,wiki,True,wiki,True
 can hurricanes form at the equator,wiki,1,wiki,True,wiki,True
 can you explain the Dark Ages,wiki,1,wiki,True,wiki,True
-can you explain what a hook is when writing an introductory paragraph,gemini,2,gemini,True,gemini,True
+can you explain what a hook is when writing an introductory paragraph,gemini,1,wiki,False,wiki,False
 can you give me information about the Pythagorean theorem,wiki,1,wiki,True,wiki,True
 can you tell me about Elon Musk,wiki,1,wiki,True,wiki,True
 can you tell me about Linda Brown,wiki,1,wiki,True,wiki,True
@@ -65,9 +65,9 @@ describe the history of mathematics,wiki,1,wiki,True,wiki,True
 describe the process of meiosis,wiki,1,wiki,True,wiki,True
 describe the process of photosynthesis,wiki,1,wiki,True,wiki,True
 describe the water cycle to me,wiki,1,wiki,True,wiki,True
-did Al Gore win presidency,wiki,3,bing,False,bing,False
+did Al Gore win presidency,wiki,1,wiki,True,wiki,True
 did Franklin Pierce ever married,wiki,1,wiki,True,wiki,True
-discuss the benefits and drawbacks of Donald Trump when he was president of the United States,gemini,3,bing,False,bing,False
+discuss the benefits and drawbacks of Donald Trump when he was president of the United States,gemini,2,gemini,True,gemini,True
 discuss whether or not the inflection point of AI has been reached,gemini,2,gemini,True,gemini,True
 do beluga whale have teeth,wiki,1,wiki,True,wiki,True
 do hurricanes form at the equator,wiki,1,wiki,True,wiki,True
@@ -79,12 +79,12 @@ does your bone marrow grow back,wiki,1,wiki,True,wiki,True
 examples of dystopian fiction,wiki,1,wiki,True,wiki,True
 explain a hook related to writing,wiki,2,gemini,False,gemini,False
 explain ecosystems from the perspective of a frog,wiki,1,wiki,True,wiki,True
-explain ecosystems from the perspective of a horse,wiki,1,wiki,True,wiki,True
+explain ecosystems from the perspective of a horse,wiki,2,gemini,False,gemini,False
 explain pi r squared,wiki,1,wiki,True,wiki,True
 explain primary colors to me as if I was a child,wiki,1,wiki,True,wiki,True
 explain primary colors to me as if I was a college student,wiki,1,wiki,True,wiki,True
 explain primary colors to me as if I was in grade 3,wiki,1,wiki,True,wiki,True
-explain solving problems with variables,gemini,2,gemini,True,gemini,True
+explain solving problems with variables,gemini,1,wiki,False,wiki,False
 explain the Dark Ages,wiki,1,wiki,True,wiki,True
 explain the historical relevance of the Dark Ages,wiki,1,wiki,True,wiki,True
 Explain the law of motion,wiki,1,wiki,True,wiki,True
@@ -98,7 +98,7 @@ Give me a summary of the Articles of the Constitution,wiki,1,wiki,True,wiki,True
 give me one idea to stop students from vaping in a high school bathroom,gemini,2,gemini,True,gemini,True
 give me some examples of central idea,gemini,1,wiki,False,wiki,False
 give us a Black History Month fact,wiki,1,wiki,True,wiki,True
-give us the NBA schedule for February 15th 2024,bing,3,bing,True,bing,True
+give us the NBA schedule for February 15th 2024,bing,1,wiki,False,wiki,False
 help me understand photosynthesis,wiki,1,wiki,True,wiki,True
 how big is Norman Island in area,wiki,1,wiki,True,wiki,True
 how big was the first computer,wiki,1,wiki,True,wiki,True
@@ -109,10 +109,10 @@ how did Abraham Lincoln die,wiki,1,wiki,True,wiki,True
 how did the Anglo-Saxons come to be,wiki,1,wiki,True,wiki,True
 how did the Middle Ages and the Renaissance Era differ,wiki,1,wiki,True,wiki,True
 how did the world population respond to the Green Revolution,wiki,1,wiki,True,wiki,True
-how did Trotsky die,wiki,3,bing,False,bing,False
+how did Trotsky die,wiki,1,wiki,True,wiki,True
 how do elephants communicate with their trunks,wiki,1,wiki,True,wiki,True
 how do frogs play a role in their environment,wiki,1,wiki,True,wiki,True
-how do I code,gemini,2,gemini,True,gemini,True
+how do I code,gemini,1,wiki,False,wiki,False
 how do I create a Google Docs,gemini,2,gemini,True,gemini,True
 how do I find Orion,gemini,2,gemini,True,gemini,True
 how do I make a glass bowl,gemini,2,gemini,True,gemini,True
@@ -123,7 +123,7 @@ how do I study for end-of-grade test,gemini,2,gemini,True,gemini,True
 how do I tell wind speed by using isobar,wiki,2,gemini,False,gemini,False
 how do school districts get hacked,gemini,1,wiki,False,wiki,False
 how do we play soccer,wiki,2,gemini,False,gemini,False
-how do we tell the wind speed,wiki,2,gemini,False,gemini,False
+how do we tell the wind speed,wiki,1,wiki,True,wiki,True
 how do we use the electromagnetic spectrum to produce Vape detecting machines,gemini,1,wiki,False,wiki,False
 how do you apply the grid method,gemini,2,gemini,True,gemini,True
 how do you cite an online article without any page numbers,gemini,1,wiki,False,wiki,False
@@ -159,14 +159,14 @@ how important is frogs to the ecosystem,wiki,1,wiki,True,wiki,True
 how is chlorophyll like a solar panel,wiki,1,wiki,True,wiki,True
 how is chlorophyll similar to a solar panel,wiki,1,wiki,True,wiki,True
 how is chlorophyll similar to solar panels,wiki,1,wiki,True,wiki,True
-how is math used in baseball,gemini,2,gemini,True,gemini,True
+how is math used in baseball,gemini,1,wiki,False,wiki,False
 how is Snow White similar to Cinderella,wiki,1,wiki,True,wiki,True
 how is the fear of Communism represented in The Crucible,wiki,1,wiki,True,wiki,True
 how is the top of the troposphere called when the sun is above us,wiki,1,wiki,True,wiki,True
 how is water made,wiki,1,wiki,True,wiki,True
 how long does working memory last,wiki,1,wiki,True,wiki,True
 how long is a mile in meters,gemini,2,gemini,True,gemini,True
-how long will it take you to climb Mount Everest,wiki,3,bing,False,bing,False
+how long will it take you to climb Mount Everest,wiki,2,gemini,False,gemini,False
 how many arms does a squid have,wiki,1,wiki,True,wiki,True
 how many arms does an octopus have,wiki,1,wiki,True,wiki,True
 how many babies are born each day in the United States,wiki,1,wiki,True,wiki,True
@@ -177,7 +177,7 @@ how many calories in a hamburger patty,wiki,1,wiki,True,wiki,True
 how many calories in one green pepper,wiki,1,wiki,True,wiki,True
 how many calories in one leaf of lettuce,wiki,1,wiki,True,wiki,True
 how many calories in one serving of mustard,wiki,1,wiki,True,wiki,True
-how many casualties from covid-19,bing,3,bing,True,bing,True
+how many casualties from covid-19,bing,1,wiki,False,wiki,False
 how many Cherokee lost their lives in the Trail of Tears,wiki,1,wiki,True,wiki,True
 how many Cherokee natives died in the Trail of Tears,wiki,1,wiki,True,wiki,True
 how many Cherokees died in the Trail of Tears,wiki,1,wiki,True,wiki,True
@@ -198,15 +198,15 @@ how many iPhones are in the world,bing,1,wiki,False,wiki,False
 how many kilometers is 21 MI,gemini,2,gemini,True,gemini,True
 how many liters are in a gallon,gemini,2,gemini,True,gemini,True
 how many meters is it to the Moon,wiki,1,wiki,True,wiki,True
-how many millimeters are there in one cm,gemini,1,wiki,False,wiki,False
-how many millimeters in 22 cm,gemini,1,wiki,False,wiki,False
+how many millimeters are there in one cm,gemini,2,gemini,True,gemini,True
+how many millimeters in 22 cm,gemini,2,gemini,True,gemini,True
 how many millimeters in to centimeters,gemini,2,gemini,True,gemini,True
 how many moons are around Saturn,wiki,1,wiki,True,wiki,True
 how many moons does Neptune have,wiki,1,wiki,True,wiki,True
 how many mph is 37.6 km,gemini,2,gemini,True,gemini,True
 how many ounces in one pound,gemini,2,gemini,True,gemini,True
 how many people are retired in the United States,wiki,1,wiki,True,wiki,True
-how many people died from covid,bing,3,bing,True,bing,True
+how many people died from covid,bing,1,wiki,False,wiki,False
 how many people live in Oxford,wiki,1,wiki,True,wiki,True
 how many polar bears are in captivity,wiki,1,wiki,True,wiki,True
 how many polar bears still exist,wiki,1,wiki,True,wiki,True
@@ -224,21 +224,21 @@ how many teeth do orcas have,wiki,1,wiki,True,wiki,True
 how many teeth does a great white shark have,wiki,1,wiki,True,wiki,True
 how many teeth does a tiger shark have,wiki,1,wiki,True,wiki,True
 how many tribes are there in the United States,wiki,1,wiki,True,wiki,True
-how much does Alexa cost a year,bing,2,gemini,False,gemini,False
+how much does Alexa cost a year,bing,1,wiki,False,wiki,False
 how much does Mount Everest weigh in kilograms,wiki,1,wiki,True,wiki,True
 how much sugar does candy have,wiki,1,wiki,True,wiki,True
 how much water does an almond tree need per day,wiki,1,wiki,True,wiki,True
 how much would it cost to fly to Tampa Florida from Durango Colorado,gemini,2,gemini,True,gemini,True
-how old is Belfast,wiki,3,bing,False,bing,False
-how old is Estonia,wiki,3,bing,False,bing,False
-how old is Marilyn Monroe,wiki,3,bing,False,bing,False
+how old is Belfast,wiki,1,wiki,True,wiki,True
+how old is Estonia,wiki,1,wiki,True,wiki,True
+how old is Marilyn Monroe,wiki,1,wiki,True,wiki,True
 how old is the average first grader in the United States,wiki,1,wiki,True,wiki,True
 how old is the city of Tallinn,wiki,1,wiki,True,wiki,True
 how old is the Earth,wiki,1,wiki,True,wiki,True
 how old is the moon,wiki,1,wiki,True,wiki,True
-how old is the oldest person,bing,3,bing,True,bing,True
-how old is the President of the United States,bing,3,bing,True,bing,True
-how old is the Queen of England,bing,3,bing,True,bing,True
+how old is the oldest person,bing,1,wiki,False,wiki,False
+how old is the President of the United States,bing,1,wiki,False,wiki,False
+how old is the Queen of England,bing,1,wiki,False,wiki,False
 how tall is Mount Everest,wiki,1,wiki,True,wiki,True
 how tall is the Eiffel Tower,wiki,1,wiki,True,wiki,True
 how tall is the tallest man in the world,wiki,1,wiki,True,wiki,True
@@ -257,8 +257,8 @@ I need sources on the planet Saturn,gemini,1,wiki,False,wiki,False
 I want to learn more about horses,wiki,1,wiki,True,wiki,True
 in kilometers what is 238855 MI,gemini,2,gemini,True,gemini,True
 in what year did the Revolutionary War start,wiki,1,wiki,True,wiki,True
-is AI going to take over the world,gemini,3,bing,False,bing,False
-is Gandhi the goat,gemini,4,none,False,gemini,True
+is AI going to take over the world,gemini,2,gemini,True,gemini,True
+is Gandhi the goat,gemini,3,none,False,gemini,True
 is Pluto a planet,wiki,1,wiki,True,wiki,True
 is the earth flat,wiki,2,gemini,False,gemini,False
 is the moon's orbit circular,wiki,1,wiki,True,wiki,True
@@ -270,7 +270,7 @@ is there a way to delete all of my promotions in Gmail at once,gemini,2,gemini,T
 is there an answer for the 3x plus one conjecture,gemini,1,wiki,False,wiki,False
 is water wet,wiki,1,wiki,True,wiki,True
 let us talk about the major themes of Hamlet,wiki,1,wiki,True,wiki,True
-share what a millipede looks like,wiki,1,wiki,True,wiki,True
+share what a millipede looks like,wiki,2,gemini,False,gemini,False
 Summarize the book Things Fall Apart,wiki,1,wiki,True,wiki,True
 teach me about elephants,wiki,1,wiki,True,wiki,True
 teach me about equivalent fractions,wiki,1,wiki,True,wiki,True
@@ -279,7 +279,7 @@ teach me about sea turtles,wiki,1,wiki,True,wiki,True
 teach me about wolves,wiki,1,wiki,True,wiki,True
 teach us about giraffes,wiki,1,wiki,True,wiki,True
 tell me a fact about Elon Musk,wiki,1,wiki,True,wiki,True
-tell me about 911,wiki,3,bing,False,bing,False
+tell me about 911,wiki,1,wiki,True,wiki,True
 tell me about African elephants,wiki,1,wiki,True,wiki,True
 tell me about bears,wiki,1,wiki,True,wiki,True
 tell me about bears and hibernating,wiki,1,wiki,True,wiki,True
@@ -307,18 +307,18 @@ tell me about the universe,wiki,1,wiki,True,wiki,True
 tell me about Wyoming,wiki,1,wiki,True,wiki,True
 tell me about Yellowstone National Park,wiki,1,wiki,True,wiki,True
 tell me the difference between a control group and experimental group,wiki,1,wiki,True,wiki,True
-tell us some sculptures made out of gum,gemini,1,wiki,False,wiki,False
+tell us some sculptures made out of gum,gemini,2,gemini,True,gemini,True
 thank you tell me about Pearson Wyoming,wiki,1,wiki,True,wiki,True
 the name of Thor's hammer,wiki,1,wiki,True,wiki,True
-uniforms for Real Madrid,wiki,1,wiki,True,wiki,True
-was Al Gore the president of the United States,wiki,4,none,False,gemini,False
+uniforms for Real Madrid,wiki,2,gemini,False,gemini,False
+was Al Gore the president of the United States,wiki,1,wiki,True,wiki,True
 what animal has the most teeth,wiki,1,wiki,True,wiki,True
 what animals are on the endangered species list,wiki,1,wiki,True,wiki,True
 what AR level is the boy who harnessed the wind,wiki,1,wiki,True,wiki,True
 what are 2 equivalent fractions,gemini,1,wiki,False,wiki,False
 what are challenges to AI.,wiki,1,wiki,True,wiki,True
 what are different types of lava,wiki,1,wiki,True,wiki,True
-what are examples of a quadratic function on a graph,wiki,2,gemini,False,gemini,False
+what are examples of a quadratic function on a graph,wiki,1,wiki,True,wiki,True
 what are examples of mental blindspots of society,wiki,1,wiki,True,wiki,True
 what are kids,wiki,1,wiki,True,wiki,True
 what are primary colors,wiki,1,wiki,True,wiki,True
@@ -347,8 +347,8 @@ what causes earthquakes,wiki,1,wiki,True,wiki,True
 what causes January 6th,wiki,1,wiki,True,wiki,True
 what color are frogs,wiki,1,wiki,True,wiki,True
 what colors are in the rainbow,wiki,1,wiki,True,wiki,True
-what day is Lincoln's birthday,wiki,3,bing,False,bing,False
-what day is Washington's birthday,wiki,3,bing,False,bing,False
+what day is Lincoln's birthday,wiki,1,wiki,True,wiki,True
+what day is Washington's birthday,wiki,1,wiki,True,wiki,True
 what do black-footed ferret eat,wiki,1,wiki,True,wiki,True
 what do frogs eat for dinner,wiki,1,wiki,True,wiki,True
 what does a groundhog look like,wiki,1,wiki,True,wiki,True
@@ -359,7 +359,7 @@ what does potassium do in the human body,wiki,1,wiki,True,wiki,True
 what does the kidney bladder look like,wiki,1,wiki,True,wiki,True
 what does the name Sydney mean,wiki,1,wiki,True,wiki,True
 what effects does the hummingbird have on the ecosystem,wiki,1,wiki,True,wiki,True
-what happened on September 11th 2001,wiki,3,bing,False,bing,False
+what happened on September 11th 2001,wiki,1,wiki,True,wiki,True
 what is 101 cm in Ft,gemini,2,gemini,True,gemini,True
 what is 20 km in standard measurement,gemini,2,gemini,True,gemini,True
 what is 3/4 of 12 in,gemini,2,gemini,True,gemini,True
@@ -418,7 +418,7 @@ what is Jupiter's largest moon,wiki,1,wiki,True,wiki,True
 what is mitosis,wiki,1,wiki,True,wiki,True
 what is Newton's law of inertia,wiki,1,wiki,True,wiki,True
 what is Newton's third law of motion,wiki,1,wiki,True,wiki,True
-what is one divided by 0,gemini,2,gemini,True,gemini,True
+what is one divided by 0,gemini,1,wiki,False,wiki,False
 what is one of the products of photosynthesis,wiki,1,wiki,True,wiki,True
 what is OPS in baseball,wiki,1,wiki,True,wiki,True
 what is Pennsylvania's state fruit,wiki,1,wiki,True,wiki,True
@@ -446,9 +446,9 @@ what is the cheese production in Wisconsin,wiki,1,wiki,True,wiki,True
 what is the circumference of the Earth,wiki,1,wiki,True,wiki,True
 what is the computer repair process,wiki,1,wiki,True,wiki,True
 what is the control center of the cell,wiki,1,wiki,True,wiki,True
-what is the current best graphics card,gemini,3,bing,False,bing,False
+what is the current best graphics card,gemini,1,wiki,False,wiki,False
 what is the date of Christmas,wiki,1,wiki,True,wiki,True
-what is the date of Mardi Gras 2024,bing,3,bing,True,bing,True
+what is the date of Mardi Gras 2024,bing,1,wiki,False,wiki,False
 what is the density of water,wiki,1,wiki,True,wiki,True
 what is the diameter of Ganymede,wiki,1,wiki,True,wiki,True
 what is the difference between a 4090 and a 39in,gemini,2,gemini,True,gemini,True
@@ -464,14 +464,14 @@ what is the divisibility rule for 9,gemini,1,wiki,False,wiki,False
 what is the equation from converting Fahrenheit to Celsius,wiki,2,gemini,False,gemini,False
 what is the exact number of pi,wiki,1,wiki,True,wiki,True
 what is the first day of spring,wiki,1,wiki,True,wiki,True
-what is the first day of spring in 2024,bing,3,bing,True,bing,True
+what is the first day of spring in 2024,bing,1,wiki,False,wiki,False
 what is the first plants fossil,wiki,1,wiki,True,wiki,True
 what is the first step in x plus 2 equals 3,gemini,2,gemini,True,gemini,True
 what is the formula for photosynthesis,wiki,1,wiki,True,wiki,True
 what is the formula for respiration,wiki,1,wiki,True,wiki,True
 what is the formula for the volume of a right square pyramid,wiki,1,wiki,True,wiki,True
 what is the golf course where the Masters is played,wiki,1,wiki,True,wiki,True
-what is the GTA 6 release date,bing,3,bing,True,bing,True
+what is the GTA 6 release date,bing,2,gemini,False,gemini,False
 what is the heaviest organ in the human body,wiki,1,wiki,True,wiki,True
 what is the history of the Han Dynasty,wiki,1,wiki,True,wiki,True
 what is the Holocaust,wiki,1,wiki,True,wiki,True
@@ -488,8 +488,8 @@ what is the most famous mission to space,wiki,1,wiki,True,wiki,True
 what is the most popular Diary of the Wimpy Kid books,wiki,1,wiki,True,wiki,True
 what is the most popular ice cream in the United States,wiki,1,wiki,True,wiki,True
 what is the most venomous snake,wiki,1,wiki,True,wiki,True
-what is the name of Taylor Swift's eleventh album,bing,3,bing,True,bing,True
-what is the name of Taylor Swift's new album,bing,3,bing,True,bing,True
+what is the name of Taylor Swift's eleventh album,bing,1,wiki,False,wiki,False
+what is the name of Taylor Swift's new album,bing,1,wiki,False,wiki,False
 what is the name of the king of England,wiki,1,wiki,True,wiki,True
 what is the name of the state north of California,wiki,1,wiki,True,wiki,True
 what is the NBA,wiki,1,wiki,True,wiki,True
@@ -502,10 +502,10 @@ what is the plot of Footloose,wiki,1,wiki,True,wiki,True
 what is the polynomial,wiki,1,wiki,True,wiki,True
 what is the population of Kern County California,wiki,1,wiki,True,wiki,True
 what is the primary cause of the Civil War,wiki,1,wiki,True,wiki,True
-what is the pwhl,wiki,4,none,False,gemini,False
+what is the pwhl,wiki,3,none,False,gemini,False
 what is the Pythagorean,wiki,1,wiki,True,wiki,True
 what is the Pythagorean theorem,wiki,1,wiki,True,wiki,True
-what is the quadratic equation,wiki,2,gemini,False,gemini,False
+what is the quadratic equation,wiki,1,wiki,True,wiki,True
 what is the reproductive system,wiki,1,wiki,True,wiki,True
 what is the significance of the Rosetta Stone,wiki,1,wiki,True,wiki,True
 what is the spec difference between a 4090 and a 39ft,gemini,2,gemini,True,gemini,True
@@ -542,7 +542,7 @@ what route did Amerigo Vespucci take,wiki,1,wiki,True,wiki,True
 what timezone is London in,wiki,1,wiki,True,wiki,True
 what type of animal is a frog,wiki,1,wiki,True,wiki,True
 what was Dwight Eisenhower born,wiki,1,wiki,True,wiki,True
-what was in the Starr report,wiki,3,bing,False,bing,False
+what was in the Starr report,wiki,1,wiki,True,wiki,True
 what was the cause of the Civil War,wiki,1,wiki,True,wiki,True
 what was the cause of the Revolutionary War,wiki,1,wiki,True,wiki,True
 what was the cause of the war of 1812,wiki,1,wiki,True,wiki,True
@@ -552,37 +552,37 @@ what was the Han Dynasty in China,wiki,1,wiki,True,wiki,True
 what was the Renaissance age,wiki,1,wiki,True,wiki,True
 what was the world population at the beginning of the first Agricultural Revolution,wiki,1,wiki,True,wiki,True
 what was the world population during the Green Revolution,wiki,1,wiki,True,wiki,True
-what were the advantages and disadvantages of Donald Trump when he was US president,gemini,3,bing,False,bing,False
+what were the advantages and disadvantages of Donald Trump when he was US president,gemini,1,wiki,False,wiki,False
 what were the major themes of Hamlet,wiki,1,wiki,True,wiki,True
-what year did Bessie Coleman die,wiki,3,bing,False,bing,False
-what year did Katherine Johnson die,wiki,3,bing,False,bing,False
+what year did Bessie Coleman die,wiki,1,wiki,True,wiki,True
+what year did Katherine Johnson die,wiki,1,wiki,True,wiki,True
 what year did Shakespeare write his first play,wiki,1,wiki,True,wiki,True
 what year did the dinosaurs go extinct,wiki,1,wiki,True,wiki,True
-what year did the United States started slavery,wiki,3,bing,False,bing,False
-what year was Aladdin made,wiki,3,bing,False,bing,False
+what year did the United States started slavery,wiki,1,wiki,True,wiki,True
+what year was Aladdin made,wiki,1,wiki,True,wiki,True
 what year was Emily Dickinson born,wiki,1,wiki,True,wiki,True
 what year was Julius Caesar born,wiki,1,wiki,True,wiki,True
 what year was Leonardo DaVinci born,wiki,1,wiki,True,wiki,True
 what year was Mission San Antonio de Alcala built,wiki,1,wiki,True,wiki,True
 what year was Mission San Diego de Alcala built,wiki,1,wiki,True,wiki,True
 what zoo has baby polar bears,bing,1,wiki,False,wiki,False
-when did Amerigo Vespucci sail across America,wiki,3,bing,False,bing,False
+when did Amerigo Vespucci sail across America,wiki,1,wiki,True,wiki,True
 when did Christopher Columbus claim land for his King in Spain,wiki,1,wiki,True,wiki,True
-when did Kobe Bryant helicopter crash,wiki,3,bing,False,bing,False
+when did Kobe Bryant helicopter crash,wiki,1,wiki,True,wiki,True
 when did Newton live,wiki,1,wiki,True,wiki,True
 when did the first computer come out,wiki,1,wiki,True,wiki,True
 when did the Revolutionary War start in America,wiki,1,wiki,True,wiki,True
 when did the Wright brothers fly the first airplane,wiki,1,wiki,True,wiki,True
-when do we celebrate Cinco de Mayo,wiki,3,bing,False,bing,False
-when is Fat Tuesday 2024,bing,3,bing,True,bing,True
-when is Mardi Gras Fat Tuesday 2024,bing,3,bing,True,bing,True
-When is National gorilla suit day,bing,3,bing,True,bing,True
-when is the first day of spring,wiki,3,bing,False,bing,False
-when is the Superbowl in 2024,bing,3,bing,True,bing,True
+when do we celebrate Cinco de Mayo,wiki,1,wiki,True,wiki,True
+when is Fat Tuesday 2024,bing,1,wiki,False,wiki,False
+when is Mardi Gras Fat Tuesday 2024,bing,1,wiki,False,wiki,False
+When is National gorilla suit day,bing,2,gemini,False,gemini,False
+when is the first day of spring,wiki,1,wiki,True,wiki,True
+when is the Superbowl in 2024,bing,1,wiki,False,wiki,False
 when was Abraham Lincoln born,wiki,1,wiki,True,wiki,True
 when was dr. pepper invented,wiki,1,wiki,True,wiki,True
-when was Footloose made,wiki,3,bing,False,bing,False
-when was fortnite created,wiki,3,bing,False,bing,False
+when was Footloose made,wiki,1,wiki,True,wiki,True
+when was fortnite created,wiki,1,wiki,True,wiki,True
 when was Google invented,wiki,1,wiki,True,wiki,True
 when was Jane Austen born,wiki,1,wiki,True,wiki,True
 when was Minecraft created,wiki,1,wiki,True,wiki,True
@@ -594,7 +594,7 @@ when was the first Xbox released,wiki,1,wiki,True,wiki,True
 when was the novel Anthem written,wiki,1,wiki,True,wiki,True
 when will I use quadratics in real life,gemini,2,gemini,True,gemini,True
 where are camels from,wiki,1,wiki,True,wiki,True
-where can I find camels today,wiki,3,bing,False,bing,False
+where can I find camels today,wiki,1,wiki,True,wiki,True
 where did an English bulldog originate,wiki,1,wiki,True,wiki,True
 where do puffer fish sleep,wiki,1,wiki,True,wiki,True
 where do pufferfish sleep,wiki,1,wiki,True,wiki,True
@@ -602,7 +602,7 @@ where do quokkas live,wiki,1,wiki,True,wiki,True
 where is Belfast,wiki,2,gemini,False,gemini,False
 where is Katherine Johnson facility located,wiki,1,wiki,True,wiki,True
 where is Norman Island,wiki,1,wiki,True,wiki,True
-where is Queen Elizabeth,wiki,3,bing,False,bing,False
+where is Queen Elizabeth,wiki,2,gemini,False,gemini,False
 where is the city of Tallinn,wiki,1,wiki,True,wiki,True
 where is the microphone on a Mac Pro laptop,gemini,1,wiki,False,wiki,False
 where is Windsor,wiki,2,gemini,False,gemini,False
@@ -618,7 +618,7 @@ which was the first of the California missions,wiki,1,wiki,True,wiki,True
 who are some famous only children,wiki,1,wiki,True,wiki,True
 who are the most influential presidents United States history,wiki,1,wiki,True,wiki,True
 who are the Star original Superman,wiki,1,wiki,True,wiki,True
-who assassinated dr. Martin Luther King,wiki,3,bing,False,bing,False
+who assassinated dr. Martin Luther King,wiki,1,wiki,True,wiki,True
 who created the statue of the David,wiki,1,wiki,True,wiki,True
 who developed early forms of algebra,wiki,1,wiki,True,wiki,True
 who discovered Ganymede,wiki,1,wiki,True,wiki,True
@@ -641,7 +641,7 @@ who is Isaac Newton,wiki,1,wiki,True,wiki,True
 who is James Walton,wiki,1,wiki,True,wiki,True
 who is Joe Alwyn,wiki,1,wiki,True,wiki,True
 who is King Henry the 8th,wiki,1,wiki,True,wiki,True
-who is mrbeast,wiki,2,gemini,False,gemini,False
+who is mrbeast,wiki,1,wiki,True,wiki,True
 who is next in line to the throne in England,wiki,1,wiki,True,wiki,True
 who is Taylor Swift boyfriend,bing,2,gemini,False,gemini,False
 who is the 16th president of the United States,wiki,1,wiki,True,wiki,True
@@ -649,20 +649,20 @@ who is the 32nd president of the United States,wiki,1,wiki,True,wiki,True
 who is the author of anthem,wiki,1,wiki,True,wiki,True
 who is the author of the novel anthem,wiki,1,wiki,True,wiki,True
 who is the CEO of cnx,wiki,1,wiki,True,wiki,True
-who is the football coach for Duquesne University,wiki,2,gemini,False,gemini,False
+who is the football coach for Duquesne University,wiki,1,wiki,True,wiki,True
 who is the head Monarch of the UK,wiki,1,wiki,True,wiki,True
 who is the king,wiki,1,wiki,True,wiki,True
 who is the king of England,wiki,1,wiki,True,wiki,True
-who is the last king or queen of the British Empire,wiki,3,bing,False,bing,False
+who is the last king or queen of the British Empire,wiki,1,wiki,True,wiki,True
 who is the main character in Midsummer Night's Dream,wiki,1,wiki,True,wiki,True
 who is the president of Duquesne University,wiki,1,wiki,True,wiki,True
-who is the president of the United States,wiki,3,bing,False,bing,False
+who is the president of the United States,wiki,1,wiki,True,wiki,True
 who is the prime minister in the UK,wiki,1,wiki,True,wiki,True
 who is the queen,wiki,1,wiki,True,wiki,True
 who is the shortest boy in the world,bing,1,wiki,False,wiki,False
 who is the strongest person in the world,bing,2,gemini,False,gemini,False
 who is Walter White,wiki,1,wiki,True,wiki,True
-who performed at the Superbowl 2024,bing,3,bing,True,bing,True
+who performed at the Superbowl 2024,bing,1,wiki,False,wiki,False
 who was Cleopatra,wiki,1,wiki,True,wiki,True
 who was Leonardo DaVinci,wiki,1,wiki,True,wiki,True
 who was the 14th president,wiki,1,wiki,True,wiki,True
@@ -679,14 +679,14 @@ who was the first president,wiki,1,wiki,True,wiki,True
 who was Ulysses S Grant,wiki,1,wiki,True,wiki,True
 who was Winston Churchill,wiki,1,wiki,True,wiki,True
 who were the presidents who were impeached,wiki,1,wiki,True,wiki,True
-who won Super Bowl 3,wiki,3,bing,False,bing,False
-who won the Superbowl in 2018,wiki,3,bing,False,bing,False
-who won the Superbowl in 2020,wiki,3,bing,False,bing,False
-who won the Superbowl in 2024,bing,3,bing,True,bing,True
+who won Super Bowl 3,wiki,1,wiki,True,wiki,True
+who won the Superbowl in 2018,wiki,1,wiki,True,wiki,True
+who won the Superbowl in 2020,wiki,1,wiki,True,wiki,True
+who won the Superbowl in 2024,bing,1,wiki,False,wiki,False
 why are frogs green,wiki,1,wiki,True,wiki,True
 why are pineapples yellow,wiki,1,wiki,True,wiki,True
-why are the trees getting cut down in the Amazon rainforest,wiki,3,bing,False,bing,False
-why are they cutting trees in the Amazon,wiki,3,bing,False,bing,False
+why are the trees getting cut down in the Amazon rainforest,wiki,1,wiki,True,wiki,True
+why are they cutting trees in the Amazon,wiki,1,wiki,True,wiki,True
 why could someone be screaming in a bathroom,gemini,2,gemini,True,gemini,True
 why did the United States Annex Hawaii,wiki,1,wiki,True,wiki,True
 why did World War one start,wiki,1,wiki,True,wiki,True
@@ -698,7 +698,7 @@ why do people socially loaf,wiki,1,wiki,True,wiki,True
 why do possums play dead,wiki,1,wiki,True,wiki,True
 why do sharks have fins,wiki,1,wiki,True,wiki,True
 why do we have muscles,wiki,1,wiki,True,wiki,True
-why do we yawn,wiki,1,wiki,True,wiki,True
+why do we yawn,wiki,2,gemini,False,gemini,False
 why does water have a high specific heat,wiki,1,wiki,True,wiki,True
 why is Pluto not a planet,wiki,1,wiki,True,wiki,True
 why is Pluto not considered a planet,wiki,1,wiki,True,wiki,True
@@ -707,16 +707,16 @@ why is the sky blue,wiki,1,wiki,True,wiki,True
 why is water important for human,wiki,1,wiki,True,wiki,True
 why should you not use AI to write your papers,gemini,2,gemini,True,gemini,True
 who should my students write about today,gemini,2,gemini,True,gemini,True
-how can we use the electromagnetic spectrum to create better safety in class,gemini,1,wiki,False,wiki,False
+how can we use the electromagnetic spectrum to create better safety in class,gemini,2,gemini,True,gemini,True
 I have an engineering class with 17 year old students I am teaching them about 3D printing could you come up with some lessons resources on how I can produce this for my students,gemini,2,gemini,True,gemini,True
-create 10 test questions on enlightenment philosophers,gemini,1,wiki,False,wiki,False
+create 10 test questions on enlightenment philosophers,gemini,2,gemini,True,gemini,True
 what questions can I ask my students about Jupiter's largest moon,gemini,1,wiki,False,wiki,False
 what will make my students settle down,gemini,2,gemini,True,gemini,True
 what will make my student stop talking,gemini,2,gemini,True,gemini,True
 what are some strategies for teaching multilingual in my classroom,gemini,2,gemini,True,gemini,True
 how do I get my students to stop talking when they are supposed to be working,gemini,2,gemini,True,gemini,True
 how to make children behave,gemini,2,gemini,True,gemini,True
-am I allowed to hit my students,gemini,4,none,False,gemini,True
+am I allowed to hit my students,gemini,3,none,False,gemini,True
 lessons for multiplying whole numbers by decimals,gemini,2,gemini,True,gemini,True
 activities for multiplying fractions by whole numbers,gemini,2,gemini,True,gemini,True
 teacher lesson plans for multiplying fractions by whole numbers,gemini,2,gemini,True,gemini,True
@@ -739,54 +739,54 @@ write me a letter of recommendation for a teacher,gemini,2,gemini,True,gemini,Tr
 write a Haiku poem,gemini,2,gemini,True,gemini,True
 ask me a would you rather question,gemini,2,gemini,True,gemini,True
 can you show us a 2 digit numbers to solve problems for 1st graders,gemini,2,gemini,True,gemini,True
-who is going to win the Superbowl this year,gemini,3,bing,False,bing,False
-what was the score for the 49ers game on Sunday,bing,3,bing,True,bing,True
-who won between the 49ers and the lion,bing,3,bing,True,bing,True
+who is going to win the Superbowl this year,gemini,2,gemini,True,gemini,True
+what was the score for the 49ers game on Sunday,bing,2,gemini,False,gemini,False
+who won between the 49ers and the lion,bing,2,gemini,False,gemini,False
 who is the prime minister of the United Kingdom,wiki,1,wiki,True,wiki,True
 who is Taylor Swift dating,bing,2,gemini,False,gemini,False
-what is going on in politics right now,bing,3,bing,True,bing,True
-how many days till Christmas,bing,3,bing,True,bing,True
-who was the last president of the United States,wiki,3,bing,False,bing,False
-who is playing in the Super Bowl,bing,3,bing,True,bing,True
+what is going on in politics right now,bing,2,gemini,False,gemini,False
+how many days till Christmas,bing,1,wiki,False,wiki,False
+who was the last president of the United States,wiki,1,wiki,True,wiki,True
+who is playing in the Super Bowl,bing,2,gemini,False,gemini,False
 who is Alabama coach,wiki,1,wiki,True,wiki,True
-when is the Superbowl this year,bing,3,bing,True,bing,True
-who is the current president,bing,3,bing,True,bing,True
+when is the Superbowl this year,bing,1,wiki,False,wiki,False
+who is the current president,bing,1,wiki,False,wiki,False
 who is the first president,wiki,1,wiki,True,wiki,True
-did Punxsutawney Phil see his shadow,bing,3,bing,True,bing,True
-how old is Kanye West,bing,3,bing,True,bing,True
-how old is Usher,bing,3,bing,True,bing,True
-how how old is Justin Bieber,bing,3,bing,True,bing,True
+did Punxsutawney Phil see his shadow,bing,2,gemini,False,gemini,False
+how old is Kanye West,bing,1,wiki,False,wiki,False
+how old is Usher,bing,1,wiki,False,wiki,False
+how how old is Justin Bieber,bing,1,wiki,False,wiki,False
 how many days till the 25th of June,gemini,2,gemini,True,gemini,True
 how many days till 27th,gemini,2,gemini,True,gemini,True
 how many days till 27th of February,gemini,2,gemini,True,gemini,True
-what year is it,bing,3,bing,True,bing,True
-what is the current year,bing,3,bing,True,bing,True
-what year are we in,bing,3,bing,True,bing,True
-is Queen Elizabeth alive,bing,3,bing,True,bing,True
-who is the current Monarch in England,bing,3,bing,True,bing,True
-who is the current president of the United States,bing,3,bing,True,bing,True
-what season is it in India,bing,3,bing,True,bing,True
-what season is it in New Zealand,bing,3,bing,True,bing,True
-what was the previous year,bing,3,bing,True,bing,True
+what year is it,bing,1,wiki,False,wiki,False
+what is the current year,bing,1,wiki,False,wiki,False
+what year are we in,bing,1,wiki,False,wiki,False
+is Queen Elizabeth alive,bing,1,wiki,False,wiki,False
+who is the current Monarch in England,bing,1,wiki,False,wiki,False
+who is the current president of the United States,bing,1,wiki,False,wiki,False
+what season is it in India,bing,1,wiki,False,wiki,False
+what season is it in New Zealand,bing,1,wiki,False,wiki,False
+what was the previous year,bing,1,wiki,False,wiki,False
 how many people are in the world,bing,1,wiki,False,wiki,False
-did the groundhog see his shadow this year,bing,3,bing,True,bing,True
-when is the next non-school day for Minneapolis Public School,bing,3,bing,True,bing,True
-what day is Easter on this year,bing,3,bing,True,bing,True
-when is the first day of spring 2024,bing,3,bing,True,bing,True
-how many days is it until the 1st of April,gemini,3,bing,False,bing,False
-how many days are there until Easter 2024,bing,3,bing,True,bing,True
+did the groundhog see his shadow this year,bing,2,gemini,False,gemini,False
+when is the next non-school day for Minneapolis Public School,bing,1,wiki,False,wiki,False
+what day is Easter on this year,bing,1,wiki,False,wiki,False
+when is the first day of spring 2024,bing,1,wiki,False,wiki,False
+how many days is it until the 1st of April,gemini,1,wiki,False,wiki,False
+how many days are there until Easter 2024,bing,1,wiki,False,wiki,False
 hey can you make me a 5 question quiz,gemini,2,gemini,True,gemini,True
 how much wood could a woodchuck chuck if a woodchuck could chuck wood,gemini,2,gemini,True,gemini,True
 why did the chicken cross the road,gemini,2,gemini,True,gemini,True
-what is going on,gemini,3,bing,False,bing,False
+what is going on,gemini,2,gemini,True,gemini,True
 where we at right now,gemini,2,gemini,True,gemini,True
 what is the answer to life,gemini,2,gemini,True,gemini,True
-who are the 10 most influential people in the world,gemini,3,bing,False,bing,False
+who are the 10 most influential people in the world,gemini,1,wiki,False,wiki,False
 what are 10 components of a plant cell,wiki,1,wiki,True,wiki,True
 list Greek gods,wiki,1,wiki,True,wiki,True
-can you name famous children that are babies,gemini,2,gemini,True,gemini,True
+can you name famous children that are babies,gemini,1,wiki,False,wiki,False
 list 5 common tax incentives,gemini,1,wiki,False,wiki,False
-list 20 argumentative essay topics,gemini,1,wiki,False,wiki,False
+list 20 argumentative essay topics,gemini,2,gemini,True,gemini,True
 list all the capitals in United States,gemini,1,wiki,False,wiki,False
 what is ‚àö -1,gemini,2,gemini,True,gemini,True
 what is 5000 divided by 286,gemini,2,gemini,True,gemini,True
@@ -830,8 +830,8 @@ solve the equation x minus 32 is equal to 45,gemini,2,gemini,True,gemini,True
 8 x 55,gemini,2,gemini,True,gemini,True
 divide 7680 by 927,gemini,2,gemini,True,gemini,True
 156 divided by 8492,gemini,2,gemini,True,gemini,True
-divide 0 by Infinity,gemini,4,none,False,gemini,True
-divide 0 by 0,gemini,2,gemini,True,gemini,True
+divide 0 by Infinity,gemini,3,none,False,gemini,True
+divide 0 by 0,gemini,1,wiki,False,wiki,False
 what is ‚àö 172,gemini,2,gemini,True,gemini,True
 what is ‚àö 2078,gemini,2,gemini,True,gemini,True
 what is 4850 x 150,gemini,2,gemini,True,gemini,True
@@ -841,7 +841,7 @@ what is the best way to make salsa,gemini,2,gemini,True,gemini,True
 what should we do tonight,gemini,2,gemini,True,gemini,True
 how would you start a design project,gemini,2,gemini,True,gemini,True
 what is a good book that I should read,gemini,2,gemini,True,gemini,True
-who will win the Superbowl,gemini,3,bing,False,bing,False
+who will win the Superbowl,gemini,2,gemini,True,gemini,True
 how can we ensure that a i is used for good and not for harn,gemini,2,gemini,True,gemini,True
 how can we ensure that artificial intelligence is used for good,gemini,2,gemini,True,gemini,True
 how can artificial intelligence be used for good,gemini,1,wiki,False,wiki,False
@@ -851,8 +851,8 @@ are the 49ers of best team,gemini,2,gemini,True,gemini,True
 who is the best football team,gemini,2,gemini,True,gemini,True
 who is the best NFL team,gemini,2,gemini,True,gemini,True
 who is better Messi or Ronaldo,gemini,2,gemini,True,gemini,True
-who is going to win the Superbowl,gemini,3,bing,False,bing,False
-who will win the Superbowl Chiefs or 49ers,gemini,3,bing,False,bing,False
+who is going to win the Superbowl,gemini,2,gemini,True,gemini,True
+who will win the Superbowl Chiefs or 49ers,gemini,2,gemini,True,gemini,True
 who is the greatest basketball player of all time,gemini,2,gemini,True,gemini,True
 are the Eagles better than the 49ers,gemini,2,gemini,True,gemini,True
 who is the worst NFL football team,gemini,2,gemini,True,gemini,True
@@ -879,7 +879,7 @@ who is better UNC or North Carolina State,gemini,2,gemini,True,gemini,True
 who is better North Carolina state or Wake Forest University,gemini,2,gemini,True,gemini,True
 who is the best current hockey player,gemini,2,gemini,True,gemini,True
 who is the best NHL team,gemini,2,gemini,True,gemini,True
-what was the best movie created the 1970s,gemini,3,bing,False,bing,False
+what was the best movie created the 1970s,gemini,2,gemini,True,gemini,True
 who is the superintendent of Rancho Santa Fe,wiki,1,wiki,True,wiki,True
 how many students are in Blaine High School,wiki,1,wiki,True,wiki,True
 what are some classroom activities for 8th grade science?,gemini,2,gemini,True,gemini,True
@@ -897,24 +897,24 @@ can you show me videos about the amazon rainforest?,gemini,2,gemini,True,gemini,
 find pictures of lyndon johnson please,gemini,2,gemini,True,gemini,True
 show us some fun chemistry videos,gemini,2,gemini,True,gemini,True
 show me images of cats,gemini,2,gemini,True,gemini,True
-please search for videos about watergate,gemini,3,bing,False,bing,False
+please search for videos about watergate,gemini,2,gemini,True,gemini,True
 show me pictures of dinosaurs,gemini,2,gemini,True,gemini,True
 search for videos of albert einstein speaking german,gemini,2,gemini,True,gemini,True
 can you show a picture of the eiffel tower please,gemini,2,gemini,True,gemini,True
 find educational videos about fractions,gemini,2,gemini,True,gemini,True
-which movie won the oscar for best picture in 2024?,bing,3,bing,True,bing,True
-who won the nobel prize for chemistry this past year?,bing,3,bing,True,bing,True
-how many seats do the republicans currently have in the U.S. house of representatives?,bing,3,bing,True,bing,True
-where is the 2024 democratic national convention?,bing,3,bing,True,bing,True
-who won the 2023 world series?,bing,3,bing,True,bing,True
-what is the latest news about israel and palestine?,bing,3,bing,True,bing,True
-what has recently happened in ukraine?,bing,3,bing,True,bing,True
-how many murders did chicago have in 2023?,bing,3,bing,True,bing,True
-what was the inflation rate in the US in the first quarter of this year?,bing,3,bing,True,bing,True
-how many interest rate hikes has the federal reserve made in 2024?,bing,3,bing,True,bing,True
-tell me about vladimir putin's recent trip to china,bing,3,bing,True,bing,True
-who is the most recently elected member of congress?,bing,3,bing,True,bing,True
-who testified last week in donald trump's trial in new york?,bing,3,bing,True,bing,True
+which movie won the oscar for best picture in 2024?,bing,1,wiki,False,wiki,False
+who won the nobel prize for chemistry this past year?,bing,1,wiki,False,wiki,False
+how many seats do the republicans currently have in the U.S. house of representatives?,bing,1,wiki,False,wiki,False
+where is the 2024 democratic national convention?,bing,1,wiki,False,wiki,False
+who won the 2023 world series?,bing,1,wiki,False,wiki,False
+what is the latest news about israel and palestine?,bing,1,wiki,False,wiki,False
+what has recently happened in ukraine?,bing,1,wiki,False,wiki,False
+how many murders did chicago have in 2023?,bing,1,wiki,False,wiki,False
+what was the inflation rate in the US in the first quarter of this year?,bing,1,wiki,False,wiki,False
+how many interest rate hikes has the federal reserve made in 2024?,bing,1,wiki,False,wiki,False
+tell me about vladimir putin's recent trip to china,bing,1,wiki,False,wiki,False
+who is the most recently elected member of congress?,bing,1,wiki,False,wiki,False
+who testified last week in donald trump's trial in new york?,bing,2,gemini,False,gemini,False
 tell me a story about a princess and a dragon,gemini,2,gemini,True,gemini,True
 tell me a joke about bears,gemini,2,gemini,True,gemini,True
 write a poem about the dolphins,gemini,2,gemini,True,gemini,True
@@ -922,77 +922,77 @@ give me 10 creative writing prompts,gemini,2,gemini,True,gemini,True
 how long is it from houston to chicago by car?,gemini,2,gemini,True,gemini,True
 "should I eat dinner out tonight, or cook at home?",gemini,2,gemini,True,gemini,True
 what's your favorite food?,gemini,2,gemini,True,gemini,True
-what supreme court cases were decided in the last year?,bing,3,bing,True,bing,True
-where will the eclipse be viewable next week?,bing,3,bing,True,bing,True
-what are the current new york times bestsellers?,bing,3,bing,True,bing,True
-Which film won the Oscar for Best Picture at the 2023 Academy Awards?,bing,3,bing,True,bing,True
-Who won the Oscar for Best Director at the 2023 Academy Awards?,bing,3,bing,True,bing,True
-Which actor won the Oscar for Best Actor at the 2023 Academy Awards?,bing,3,bing,True,bing,True
-Who won the Oscar for Best Actress at the 2023 Academy Awards?,bing,3,bing,True,bing,True
-Who won the Oscar for Best Supporting Actor at the 2023 Academy Awards?,bing,3,bing,True,bing,True
-Which actress won the Oscar for Best Supporting Actress at the 2023 Academy Awards?,bing,3,bing,True,bing,True
-Who won the Oscar for Best Original Screenplay at the 2023 Academy Awards?,bing,3,bing,True,bing,True
-Which screenplay won the Oscar for Best Adapted Screenplay at the 2023 Academy Awards?,bing,3,bing,True,bing,True
-Which animated film won the Oscar for Best Animated Feature at the 2023 Academy Awards?,bing,3,bing,True,bing,True
-Which film won the Oscar for Best International Feature at the 2023 Academy Awards?,bing,3,bing,True,bing,True
-Which album won the Grammy for Album of the Year at the 2023 Grammy Awards?,bing,3,bing,True,bing,True
-What song won the Grammy for Record of the Year at the2023 Grammy Awards?,bing,3,bing,True,bing,True
-Which song won the Grammy for Song of the Year at the 2023 Grammy Awards?,bing,3,bing,True,bing,True
-Who won the Grammy for Best New Artist at the 2023 Grammy Awards?,bing,3,bing,True,bing,True
-Which album won the Grammy for Best Pop Vocal Album at the 2023 Grammy Awards?,bing,3,bing,True,bing,True
-What album won the Grammy for Best Rap Album at the 2023 Grammy Awards?,bing,3,bing,True,bing,True
-Which album won the Grammy for Best R&B Album at the 2023 Grammy Awards?,bing,3,bing,True,bing,True
-What album won the Grammy for Best Rock Album at the 2023 Grammy Awards?,bing,3,bing,True,bing,True
-Which album won the Grammy for Best Country Album at the 2023 Grammy Awards?,bing,3,bing,True,bing,True
-What album won the Grammy for Best Alternative Music Album at the 2023 Grammy Awards?,bing,3,bing,True,bing,True
-Which TV series won the Emmy for Outstanding Drama Series at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Which TV series won the Emmy for Outstanding Comedy Series at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Which limited series won the Emmy for Outstanding Limited Series at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Who won the Emmy for Outstanding Lead Actor in a Drama Series at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Who won the Emmy for Outstanding Lead Actress in a Drama Series at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Who won the Emmy for Outstanding Lead Actor in a Comedy Series at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Who won the Emmy for Outstanding Lead Actress in a Comedy Series at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Who won the Emmy for Outstanding Lead Actor in a Limited Series or Movie at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Who won the Emmy for Outstanding Lead Actress in a Limited Series or Movie at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Who won the Emmy for Outstanding Supporting Actor in a Drama Series at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Who won the Emmy for Outstanding Supporting Actress in a Drama Series at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Who won the Emmy for Outstanding Supporting Actor in a Comedy Series at the 2023 Emmy Awards?,bing,3,bing,True,bing,True
-Who won the Nobel Prize in Physics in 2023 for their groundbreaking work in quantum computing?,bing,3,bing,True,bing,True
-Which scientists were awarded the Nobel Prize in Chemistry in 2023 for their development of a new technique for drug discovery?,bing,3,bing,True,bing,True
-Who received the Nobel Prize in Medicine or Physiology in 2023 for their discovery of a new class of antibiotics?,bing,3,bing,True,bing,True
-Who was awarded the Nobel Prize in Literature in 2023 for their outstanding contribution to literature?,bing,3,bing,True,bing,True
-Which organization received the Nobel Peace Prize in 2023 for their efforts in promoting global peace and disarmament?,bing,3,bing,True,bing,True
-Who won the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel in 2023 for their work on addressing inequality in developing countries?,bing,3,bing,True,bing,True
-Which country won the FIFA Men's World Cup in 2023?,bing,3,bing,True,bing,True
-Which country won the FIFA Women's World Cup in 2023?,bing,3,bing,True,bing,True
-Who won the Wimbledon Men's Singles title in 2023?,bing,3,bing,True,bing,True
-Who won the Wimbledon Women's Singles title in 2023?,bing,3,bing,True,bing,True
-Which team won the NBA Finals in 2023?,bing,3,bing,True,bing,True
-Which team won the Super Bowl in 2023?,bing,3,bing,True,bing,True
-Which team won the UEFA Champions League in 2023?,bing,3,bing,True,bing,True
-Who won the Formula 1 World Drivers' Championship in 2023?,bing,3,bing,True,bing,True
-Which team won the Formula 1 Constructors' Championship in 2023?,bing,3,bing,True,bing,True
-Who won The Masters golf tournament in 2023?,bing,3,bing,True,bing,True
-Who won the Tour de France in 2023?,bing,3,bing,True,bing,True
-Who won Superbowl LVIII?,bing,3,bing,True,bing,True
-Which novel won the Pulitzer Prize for Fiction in 2023?,bing,3,bing,True,bing,True
-What play was awarded the Pulitzer Prize for Drama in 2023?,bing,3,bing,True,bing,True
-Which book received the Pulitzer Prize for History in 2023?,bing,3,bing,True,bing,True
-Who won the Pulitzer Prize for Biography or Autobiography in 2023?,bing,3,bing,True,bing,True
-Which collection of poems was honored with the Pulitzer Prize for Poetry in 2023?,bing,3,bing,True,bing,True
-Which book was awarded the Pulitzer Prize for General Nonfiction in 2023?,bing,3,bing,True,bing,True
-What composition received the Pulitzer Prize for Music in 2023?,bing,3,bing,True,bing,True
-Who is the current prime minister of Kuwait?,bing,3,bing,True,bing,True
-Who is the current king of Denmark?,bing,3,bing,True,bing,True
-Who is the current president of Argentina?,bing,3,bing,True,bing,True
-Who is the current president of Singapore?,bing,3,bing,True,bing,True
-Who is the current prime minister of Greece?,bing,3,bing,True,bing,True
-Who is the current prime minister of Finland?,bing,3,bing,True,bing,True
-Who is the current prime minister of Algeria?,bing,3,bing,True,bing,True
-Who is the current prime minister of Cambodia?,bing,3,bing,True,bing,True
-Who is the current prime minister of Thailand?,bing,3,bing,True,bing,True
-Who is the current president of Latvia?,bing,3,bing,True,bing,True
-Who is the current president of Guatemala?,bing,3,bing,True,bing,True
+what supreme court cases were decided in the last year?,bing,1,wiki,False,wiki,False
+where will the eclipse be viewable next week?,bing,1,wiki,False,wiki,False
+what are the current new york times bestsellers?,bing,1,wiki,False,wiki,False
+Which film won the Oscar for Best Picture at the 2023 Academy Awards?,bing,1,wiki,False,wiki,False
+Who won the Oscar for Best Director at the 2023 Academy Awards?,bing,1,wiki,False,wiki,False
+Which actor won the Oscar for Best Actor at the 2023 Academy Awards?,bing,1,wiki,False,wiki,False
+Who won the Oscar for Best Actress at the 2023 Academy Awards?,bing,1,wiki,False,wiki,False
+Who won the Oscar for Best Supporting Actor at the 2023 Academy Awards?,bing,1,wiki,False,wiki,False
+Which actress won the Oscar for Best Supporting Actress at the 2023 Academy Awards?,bing,1,wiki,False,wiki,False
+Who won the Oscar for Best Original Screenplay at the 2023 Academy Awards?,bing,1,wiki,False,wiki,False
+Which screenplay won the Oscar for Best Adapted Screenplay at the 2023 Academy Awards?,bing,1,wiki,False,wiki,False
+Which animated film won the Oscar for Best Animated Feature at the 2023 Academy Awards?,bing,1,wiki,False,wiki,False
+Which film won the Oscar for Best International Feature at the 2023 Academy Awards?,bing,1,wiki,False,wiki,False
+Which album won the Grammy for Album of the Year at the 2023 Grammy Awards?,bing,1,wiki,False,wiki,False
+What song won the Grammy for Record of the Year at the2023 Grammy Awards?,bing,1,wiki,False,wiki,False
+Which song won the Grammy for Song of the Year at the 2023 Grammy Awards?,bing,1,wiki,False,wiki,False
+Who won the Grammy for Best New Artist at the 2023 Grammy Awards?,bing,1,wiki,False,wiki,False
+Which album won the Grammy for Best Pop Vocal Album at the 2023 Grammy Awards?,bing,2,gemini,False,gemini,False
+What album won the Grammy for Best Rap Album at the 2023 Grammy Awards?,bing,1,wiki,False,wiki,False
+Which album won the Grammy for Best R&B Album at the 2023 Grammy Awards?,bing,1,wiki,False,wiki,False
+What album won the Grammy for Best Rock Album at the 2023 Grammy Awards?,bing,1,wiki,False,wiki,False
+Which album won the Grammy for Best Country Album at the 2023 Grammy Awards?,bing,1,wiki,False,wiki,False
+What album won the Grammy for Best Alternative Music Album at the 2023 Grammy Awards?,bing,1,wiki,False,wiki,False
+Which TV series won the Emmy for Outstanding Drama Series at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Which TV series won the Emmy for Outstanding Comedy Series at the 2023 Emmy Awards?,bing,2,gemini,False,gemini,False
+Which limited series won the Emmy for Outstanding Limited Series at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Who won the Emmy for Outstanding Lead Actor in a Drama Series at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Who won the Emmy for Outstanding Lead Actress in a Drama Series at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Who won the Emmy for Outstanding Lead Actor in a Comedy Series at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Who won the Emmy for Outstanding Lead Actress in a Comedy Series at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Who won the Emmy for Outstanding Lead Actor in a Limited Series or Movie at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Who won the Emmy for Outstanding Lead Actress in a Limited Series or Movie at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Who won the Emmy for Outstanding Supporting Actor in a Drama Series at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Who won the Emmy for Outstanding Supporting Actress in a Drama Series at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Who won the Emmy for Outstanding Supporting Actor in a Comedy Series at the 2023 Emmy Awards?,bing,1,wiki,False,wiki,False
+Who won the Nobel Prize in Physics in 2023 for their groundbreaking work in quantum computing?,bing,1,wiki,False,wiki,False
+Which scientists were awarded the Nobel Prize in Chemistry in 2023 for their development of a new technique for drug discovery?,bing,1,wiki,False,wiki,False
+Who received the Nobel Prize in Medicine or Physiology in 2023 for their discovery of a new class of antibiotics?,bing,1,wiki,False,wiki,False
+Who was awarded the Nobel Prize in Literature in 2023 for their outstanding contribution to literature?,bing,1,wiki,False,wiki,False
+Which organization received the Nobel Peace Prize in 2023 for their efforts in promoting global peace and disarmament?,bing,1,wiki,False,wiki,False
+Who won the Sveriges Riksbank Prize in Economic Sciences in Memory of Alfred Nobel in 2023 for their work on addressing inequality in developing countries?,bing,1,wiki,False,wiki,False
+Which country won the FIFA Men's World Cup in 2023?,bing,1,wiki,False,wiki,False
+Which country won the FIFA Women's World Cup in 2023?,bing,1,wiki,False,wiki,False
+Who won the Wimbledon Men's Singles title in 2023?,bing,1,wiki,False,wiki,False
+Who won the Wimbledon Women's Singles title in 2023?,bing,1,wiki,False,wiki,False
+Which team won the NBA Finals in 2023?,bing,1,wiki,False,wiki,False
+Which team won the Super Bowl in 2023?,bing,1,wiki,False,wiki,False
+Which team won the UEFA Champions League in 2023?,bing,1,wiki,False,wiki,False
+Who won the Formula 1 World Drivers' Championship in 2023?,bing,1,wiki,False,wiki,False
+Which team won the Formula 1 Constructors' Championship in 2023?,bing,1,wiki,False,wiki,False
+Who won The Masters golf tournament in 2023?,bing,1,wiki,False,wiki,False
+Who won the Tour de France in 2023?,bing,1,wiki,False,wiki,False
+Who won Superbowl LVIII?,bing,1,wiki,False,wiki,False
+Which novel won the Pulitzer Prize for Fiction in 2023?,bing,2,gemini,False,gemini,False
+What play was awarded the Pulitzer Prize for Drama in 2023?,bing,1,wiki,False,wiki,False
+Which book received the Pulitzer Prize for History in 2023?,bing,1,wiki,False,wiki,False
+Who won the Pulitzer Prize for Biography or Autobiography in 2023?,bing,1,wiki,False,wiki,False
+Which collection of poems was honored with the Pulitzer Prize for Poetry in 2023?,bing,1,wiki,False,wiki,False
+Which book was awarded the Pulitzer Prize for General Nonfiction in 2023?,bing,1,wiki,False,wiki,False
+What composition received the Pulitzer Prize for Music in 2023?,bing,1,wiki,False,wiki,False
+Who is the current prime minister of Kuwait?,bing,1,wiki,False,wiki,False
+Who is the current king of Denmark?,bing,1,wiki,False,wiki,False
+Who is the current president of Argentina?,bing,1,wiki,False,wiki,False
+Who is the current president of Singapore?,bing,1,wiki,False,wiki,False
+Who is the current prime minister of Greece?,bing,1,wiki,False,wiki,False
+Who is the current prime minister of Finland?,bing,1,wiki,False,wiki,False
+Who is the current prime minister of Algeria?,bing,1,wiki,False,wiki,False
+Who is the current prime minister of Cambodia?,bing,1,wiki,False,wiki,False
+Who is the current prime minister of Thailand?,bing,1,wiki,False,wiki,False
+Who is the current president of Latvia?,bing,1,wiki,False,wiki,False
+Who is the current president of Guatemala?,bing,1,wiki,False,wiki,False
 "translate this sentence into French: ""I love you""",gemini,2,gemini,True,gemini,True
 will you be my friend?,gemini,2,gemini,True,gemini,True
 do you believe in God?,gemini,2,gemini,True,gemini,True
